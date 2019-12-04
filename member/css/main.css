@@ -2943,7 +2943,7 @@ select {
 
 .styled-select option.gray {
   color: #888888; }
-
+input::placeholder, textarea::placeholder{ color: #b5b5b5; }
 input[type=text], input[type=password], input[type=tel], input[type=url], input[type=email], textarea,
 input.form-control {
   border: 1px solid #e0e0e0;

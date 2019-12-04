@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>holkee 會員中心</title>
+    <title>holkee 會員中心 - 編輯商品</title>
     <meta name='description' content=""/>
     <meta name='keywords' content=""/>
     <meta name="MobileOptimized" content="width">
@@ -17,15 +17,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
 
+    <!-- Select2 -->
+    <link href="select/css/select2.min.css" rel="stylesheet" />
+    <script src="select/js/select2.min.js"></script>
+
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        $('.popup-link').magnificPopup({
-          removalDelay: 300,
-          mainClass: 'mfp-fade'
+        $(function() {
+            $('.popup-link').magnificPopup({
+              removalDelay: 300,
+              mainClass: 'mfp-fade'
+            });
         });
-    });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2();
+        });
     </script>
     <style type="text/css">
         *:link, *:visited, *:hover, *:active, *:focus , * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
@@ -168,8 +177,36 @@
                                         <p class="the_reminder">※最多500個字元，請勿添加宣傳文字 (如「免運費」)。ex. 100%純棉</p>
                                     </li>
                                     <li>
-                                        <label for=""><p class="label_title">商品類別</p></label>
-                                        <input class="w408 none_function" id="" name="" type="text" value="服飾與配件">
+                                        <label for=""><p class="label_title">Google 分類</p></label>
+                                        <div class="styled-select w408">
+                                            <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類">
+                                                <option value="0" selected="selected" class="gray">請選擇分類</option>
+                                                <option value="1">西點類</option>
+                                            </select>
+                                        </div>
+                                        <p class="the_reminder">有助於確保您的網站出現在恰當的搜尋結果中。</p>
+                                    </li>
+                                    <li>
+                                        <label for=""><p class="label_title">商品所屬分類</p></label>
+                                        <div class="styled-select w408">
+                                            <!-- <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇主分類">
+                                                <option value="0" selected="selected" class="gray">請選擇主分類</option>
+                                                <option value="1">主分類1</option>
+                                            </select> -->
+                                            <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                                                <optgroup label="冷凍宅配商品">
+                                                    <option value="">一夜干</option>
+                                                    <option value="">鮭魚</option>
+                                                    <option value="">鮮蝦</option>
+                                                </optgroup>
+                                                <optgroup label="常溫商品">
+                                                    <option value="">五穀米</option>
+                                                    <option value="">地瓜粉</option>
+                                                    <option value="">低筋麵粉</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <p class="the_reminder">請前往會員中心 > 我的商店 > 商品分類，自行設定顯示名稱</p>
                                     </li>
                                     <li>
                                         <label for=""><p class="label_title">商品狀況</p></label>
@@ -190,7 +227,7 @@
                                         <ul class="Photo_list clearfix">
                                             <li>
                                                 <span class="list_nb">1</span>
-                                                <div class="photo">
+                                                <div class="f-upload-image photo">
                                                     <div class="the_btn">
                                                         <p>
                                                             <a href="#"><i class="fas fa-undo-alt"></i>更新</a>
@@ -236,13 +273,37 @@
                                                     <img src="images/logo_test_01.png" style="vertical-align: middle;">
                                                 </div>
                                             </li>
-                                            <li class="none_move">
+                                            <li>
+                                                <span class="list_nb">5</span>
+                                                <div class="photo">
+                                                    <div class="the_btn">
+                                                        <p>
+                                                            <a href="#"><i class="fas fa-undo-alt"></i>更新</a>
+                                                            <a href="#"><i class="fas fa-trash-alt"></i>刪除</a>
+                                                        </p>
+                                                    </div>
+                                                    <img src="images/logo_test_01.png" style="vertical-align: middle;">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="list_nb">6</span>
+                                                <div class="photo">
+                                                    <div class="the_btn">
+                                                        <p>
+                                                            <a href="#"><i class="fas fa-undo-alt"></i>更新</a>
+                                                            <a href="#"><i class="fas fa-trash-alt"></i>刪除</a>
+                                                        </p>
+                                                    </div>
+                                                    <img src="images/logo_test_01.png" style="vertical-align: middle;">
+                                                </div>
+                                            </li>
+                                            <!-- <li class="none_move">
                                                 <div class="photo">
                                                     <a class="img_upload">
                                                         <p><i class="images fas fa-upload"></i>新增</p>
                                                     </a>
                                                 </div>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </li>
                                 </ul>
@@ -253,12 +314,13 @@
                     <div class="product_list_data for_goods_edit">
                         <table class="for_product_info" width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tr class="top_title">
-                              <th align="center">主規格樣式</th>
-                              <th align="center">附屬規格樣式1</th>
-                              <th align="center">商品供應</th>
-                              <th align="center">商品交期</th>
-                              <th align="center">商品價格</th>
-                              <th align="center">商品縮圖</th>
+                              <th align="center">主規格</th>
+                              <th align="center">副規格</th>
+                              <th align="center">供應狀態</th>
+                              <th align="center">庫存</th>
+                              <th align="center">交期</th>
+                              <th align="center">價格</th>
+                              <th align="center">商品圖片</th>
                               <th align="center">刪除</th>
                             </tr>
                             <tr>
@@ -271,7 +333,8 @@
                                     <option value="3" selected="selected">預購</option>
                                 </select>
                               </td>
-                              <td align="center"><input class="the_one" id="" name="" type="text" value="預購品追加期：7-20個工作天(不含例假日)"></td><!-- 選了預購，才會出現此欄位 -->
+                              <td align="center"><input class="the_one the_stock" id="" name="" type="text" value="99999"></td>
+                              <td align="center"><input class="the_one the_delivery_period" id="" name="" type="text" value="預購品追加期：7-20個工作天(不含例假日)"></td><!-- 選了預購，才會出現此欄位 -->
                               <td align="center"><input class="the_one the_money" id="" name="" type="text" value="390"></td>
                               <td align="center">
                                 <a class="link" href="#" target="_blank"><div class="the_photo"><img src="images/share_03_s.png" width="100%"></div>
@@ -289,7 +352,8 @@
                                     <option value="3">預購</option>
                                 </select>
                               </td>
-                              <td align="center">現貨</td>
+                              <td align="center"><input class="the_one the_stock" id="" name="" type="text" value="500"></td>
+                              <td align="center"><input class="the_one the_delivery_period" id="" name="" type="text"></td>
                               <td align="center"><input class="the_one the_money" id="" name="" type="text" value="390"></td>
                               <td align="center">
                                 <a class="link" href="#" target="_blank"><div class="the_photo"><img src="images/share_03_s.png" width="100%"></div>
@@ -307,7 +371,8 @@
                                     <option value="3">預購</option>
                                 </select>
                               </td>
-                              <td align="center"></td>
+                              <td align="center"><input class="the_one the_stock" id="" name="" type="text" value=""></td>
+                              <td align="center"><input class="the_one the_delivery_period" id="" name="" type="text"></td>
                               <td align="center"><input class="the_one the_money" id="" name="" type="text" value="12,390"></td>
                               <td align="center">
                                 <a class="link" href="#" target="_blank"><div class="the_photo"><img src="images/share_02_s.png" width="100%"></div>
@@ -325,7 +390,8 @@
                                     <option value="3">預購</option>
                                 </select>
                               </td>
-                              <td align="center"></td>
+                              <td align="center"><input class="the_one the_stock" id="" name="" type="text" value=""></td>
+                              <td align="center"><input class="the_one the_delivery_period" id="" name="" type="text"></td>
                               <td align="center"><input class="the_one the_money" id="" name="" type="text" value="12,390"></td>
                               <td align="center">
                                 <a class="link" href="#" target="_blank"><div class="the_photo"><img src="images/share_01_s.png" width="100%"></div>
@@ -343,7 +409,8 @@
                                     <option value="3">預購</option>
                                 </select>
                               </td>
-                              <td align="center"></td>
+                              <td align="center"><input class="the_one the_stock" id="" name="" type="text" value=""></td>
+                              <td align="center"><input class="the_one the_delivery_period" id="" name="" type="text"></td>
                               <td align="center"><input class="the_one the_money" id="" name="" type="text" value="12,390"></td>
                               <td align="center">
                                 <a class="link" href="#" target="_blank"><div class="the_photo"><img src="images/share_00_s.png" width="100%"></div>
@@ -353,41 +420,31 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="reportDataBox">
+                    <div class="reportDataBox for_goods_edit">
                         <div class="sub_tools clearfix">
-                            <p class="download"><a href="goods_order_list_shipment_01.html">新增規格樣式</a></p>
+                            <p class="download"><a href="goods_order_list_shipment_01.html">新增規格</a></p>
                         </div>
                     </div>
-                    <ul class="pageBox"> <!-- 最多八個或幾個網站? 就出現頁籤 -->
-                        <li><p><a href="#" class="border">Prev</a></p></li>
-                        <li><p><a href="#">1</a></p></li>
-                        <li><p><a class="btn_in" href="#">2</a></p></li>
-                        <li><p><a href="#">3</a></p></li>
-                        <li><p>...</p></li>
-                        <li><p><a href="#">6</a></p></li>
-                        <li><p><a href="#">7</a></p></li>
-                        <li><p><a href="#" class="border">Next</a></p></li>
-                    </ul>
-                    <p class="btn_default"><a href="#">儲存</a></p>
+                    <p class="btn_default">
+                        <a href="#">儲存</a>
+                        <a class="color_gray" href="#return">取消</a>
+                    </p>
                 </div>
             </div>
         </div>
 
-    <div id="popup" class="white-popup mfp-hide popup-w-s">
-        <form class="setBox">
-            <div class="top_title">
-                <h3>確認訂單刪除</h3>
-                <p>訂單刪除後將無法恢復喔！</p>
-            </div>
-            <div class="fillinBox">
-                <p class="btn_default"><a href="#">確認</a><a class="color_gray" href="#">取消</a></p>
-            </div>
-        </form>
-    </div>
+        <div id="popup" class="white-popup mfp-hide popup-w-s">
+            <form class="setBox">
+                <div class="top_title">
+                    <h3>確認訂單刪除</h3>
+                    <p>訂單刪除後將無法恢復喔！</p>
+                </div>
+                <div class="fillinBox">
+                    <p class="btn_default"><a href="#">確認</a><a class="color_gray" href="#">取消</a></p>
+                </div>
+            </form>
+        </div>
     </main>
-
-
-
     <footer class="FooterBox">
         <div class="ContentsBox">
             <div class="navbar clearfix">
@@ -414,7 +471,7 @@
                     <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
                     <li><a href="#"><i class="fab fa-weixin"></i></a></li>
                 </ul>
-                <p>Copyrights © 2018 All Rights Reserved.</p>
+                <p>Copyrights © 2019 All Rights Reserved.</p>
             </div>
         </div>
     </footer>

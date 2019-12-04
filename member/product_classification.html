@@ -39,59 +39,6 @@
                 <li class="noticeBox"><a><p><i class="far fa-bell"></i>
                     <span class="text">通知</span>
                     <span class="bell_nb">9</span></p></a>
-                    <div class="notificationBox" style="display: none;">
-                        <div class="top_all_read">
-                            <p><a href="#">全部標示已讀</a></p>
-                        </div>
-                        <div class="listBox">
-                            <div class="notification-item clearfix status-unread"><!-- 未讀取狀態 -->
-                                <div class="left-box">
-                                    <div class="photo"><img src="images/icon-hires.jpg" width="100%" alt="holkee 官方"></div>
-                                </div>
-                                <div class="notification-content">
-                                    <p class="title">您在【yaya & chacha baby】網站使用的行銷廣告即將到期</p><!-- 目前想到的狀態一:通知廣告要到期了 -->
-                                    <p class="time">1小時前</p>
-                                </div>
-                            </div>
-                            <div class="notification-item clearfix status-unread">
-                                <div class="left-box">
-                                    <div class="photo"><img src="images/icon-hires.jpg" width="100%" alt="holkee 官方"></div>
-                                </div>
-                                <div class="notification-content">
-                                    <p class="title">恭喜您已成功開通【購物網站】，請填寫更多設定以便消費者使用，點我了解更多</p><!-- 目前想到的狀態二:開通網站，但未做其它事情的提醒，或是不管有沒有做什麼都通知它XD -->
-                                    <p class="time">2小時前</p>
-                                </div>
-                            </div>
-                            <div class="notification-item clearfix">
-                                <div class="left-box">
-                                    <div class="photo"><img src="images/icon-hires.jpg" width="100%" alt="holkee 官方"></div>
-                                </div>
-                                <div class="notification-content">
-                                    <p class="title">【行銷@網頁】★過年瘋團購！用對工具成為消費者年節伴手禮首選！</p><!-- 目前想到的狀態三:行銷EDM 教學之類的(新增最新消息的通知) -->
-                                    <p class="time">3小時前</p>
-                                </div>
-                            </div>
-                            <div class="notification-item clearfix">
-                                <div class="left-box">
-                                    <div class="photo"><img src="images/icon-hires.jpg" width="100%" alt="holkee 官方"></div>
-                                </div>
-                                <div class="notification-content">
-                                    <p class="title">恭喜您成功發布網站【yaya & chacha baby】，免費申請Google商家，以便透過Google 地圖和Google 搜尋，提高您的商家在當地社群中的知名度。</p><!-- 目前想到的狀態四:push GMB，提醒user可以透過GMB曝光 -->
-                                    <p class="time">1天前</p>
-                                </div>
-                            </div>
-                            <div class="notification-item clearfix">
-                                <div class="left-box">
-                                    <div class="photo"><img src="images/icon-hires.jpg" width="100%" alt="holkee 官方"></div>
-                                </div>
-                                <div class="notification-content">
-                                    <p class="title">恭喜您成功註冊holkee，快來獲取更多holkee點數</p><!-- 目前想到的狀態五:完成註冊，提醒user可以填寫其他設定已獲的holkee點數 -->
-                                    <p class="time">1天前</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="more"><a href="#">顯示全部</a></p>
-                    </div>
                 </li>
                 <li class="profile_photo">
                     <a><div class="header_profile_img"><img src="https://graph.facebook.com/1324292190919409/picture?width=40&amp;height=40" width="100%"></div>
@@ -125,8 +72,6 @@
                             <li><p><a href="#">表單<span class="label_nb">10</span></a></p></li>
                         </ul>
                     </li>
-                    <li><h3><a href="#"><i class="fab fa-product-hunt" aria-hidden="true"></i>holkee點數</a></h3></li>
-                    <li><h3><a href="#"><i class="fas fa-sliders-h"></i>行銷廣告<span class="label_remind">廣告即將到期</span></a></h3></li>
                     <li><h3><a href="#"><i class="far fa-star" aria-hidden="true"></i>申請GMB<span class="label_remind">免費</span></a></h3></li>
                     <li class="btn_more">
                         <h3><a href="#"><i class="far fa-file-alt"></i>
@@ -151,67 +96,79 @@
             </div>
             <div class="rightData">
                 <div class="dataBox">
-                    <h4 class="top_title">商品列表</h4>
-                    <div class="reportDataBox orderSearch">
-                        <div class="top_tools clearfix">
-                            <form class="setBox">
-                                <div class="fillinBox">
-                                    <ul class="filter_list clearfix">
-                                        <li class="clearfix">
-                                            <div class="styled-select">
-                                                <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇主項目">
-                                                    <option value="0" selected="selected" class="gray">全部商品</option>
-                                                    <option value="1">最新上市</option>
-                                                    <option value="2">精選商品</option>
-                                                </select>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix">
-                                            <div class="styled-select">
-                                                <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇子項目">
-                                                    <option value="0" selected="selected" class="gray">子分類1</option>
-                                                    <option value="1">全部</option>
-                                                    <option value="1">究竟二十五個字會有多長呢？讓我們繼續看下去吧～～</option>
-                                                </select>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="product_list_data">
+                    <h4 class="top_title">商品分類</h4>
+                    <div class="product_list_data for_goods_edit for_classification_edit">
                         <table class="for_product_info" width="100%" border="0" cellspacing="0" cellpadding="0"><!-- 只提供最多5項商品群組 -->
                             <tr class="top_title">
-                              <th>商品名稱</th>
-                              <th align="center">更新日期</th>
+                              <th>分類名稱</th>
+                              <th align="center">排序</th>
                               <th width="140px" align="center">編輯/刪除</th>
                             </tr>
                             <tr>
-                              <td>男性開領短袖襯衫</td>
-                              <td align="center">2017.12.12</td>
-                              <td align="center"><a class="btn_tools" href="#">編輯</a><a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除訂單"></i></a></td>
+                              <td align="center"><input class="the_one" id="" name="" type="text" value="最新上市"></td>
+                              <td align="center">
+                                <select class="the_one the_sequence" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類排序">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected="selected">3</option>
+                                </select>
+                              </td>
+                              <td align="right">
+                                <a class="btn_tools" href="#">新增子分類</a>
+                                <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
+                              </td>
+                            </tr>
+                            <tr class="sub_classification">
+                              <td align="center">
+                                <input class="the_one" id="" name="" type="text" value="子分類1">
+                              </td>
+                              <td align="center">
+                              </td>
+                              <td align="right">
+                                <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
+                              </td>
                             </tr>
                             <tr>
-                              <td>男性開領短袖襯衫</td>
-                              <td align="center">2017.12.12</td>
-                              <td align="center"><a class="btn_tools" href="#">編輯</a><a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除訂單"></i></a></td>
+                              <td align="center"><input class="the_one" id="" name="" type="text" value="熱門商品"></td>
+                              <td align="center">
+                                <select class="the_one the_sequence" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類排序">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected="selected">3</option>
+                                </select>
+                              </td>
+                              <td align="right">
+                                <a class="btn_tools" href="#">新增子分類</a>
+                                <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
+                              </td>
                             </tr>
                             <tr>
-                              <td>男性開領短袖襯衫</td>
-                              <td align="center">2017.12.12</td>
-                              <td align="center"><a class="btn_tools" href="#">編輯</a><a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除商品"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td>男性開領短袖襯衫</td>
-                              <td align="center">2017.12.12</td>
-                              <td align="center"><a class="btn_tools" href="#">編輯</a><a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除訂單"></i></a></td>
+                              <td align="center">
+                                <input class="the_one" id="" name="" type="text" value="">
+                                <p class="parsley-errors-list filled" id=""><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span class="parsley-required">限25個字</span></p>
+                              </td>
+                              <td align="center">
+                                <select class="the_one the_sequence" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類排序">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected="selected">3</option>
+                                </select>
+                              </td>
+                              <td align="right">
+                                <a class="btn_tools" href="#">新增子分類</a>
+                                <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
+                              </td>
                             </tr>
                         </table>
                     </div>
-                    <div class="user_infoDate">
-                        <p class="btn_default"><a class="popup-link" href="#add-product">新增商品</a></p>
+                    <div class="reportDataBox for_goods_edit">
+                        <div class="sub_tools clearfix">
+                            <p class="download"><a href="#">新增主分類</a></p>
+                        </div>
                     </div>
+                    <p class="btn_default">
+                        <a href="#">儲存</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -341,7 +298,7 @@
                     <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
                     <li><a href="#"><i class="fab fa-weixin"></i></a></li>
                 </ul>
-                <p>Copyrights © 2018 All Rights Reserved.</p>
+                <p>Copyrights © 2019 All Rights Reserved.</p>
             </div>
         </div>
     </footer>
