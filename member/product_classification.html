@@ -97,69 +97,71 @@
             <div class="rightData">
                 <div class="dataBox">
                     <h4 class="top_title">商品分類</h4>
-                    <div class="product_list_data for_goods_edit for_classification_edit">
-                        <table class="for_product_info" width="100%" border="0" cellspacing="0" cellpadding="0"><!-- 只提供最多5項商品群組 -->
-                            <tr class="top_title">
-                              <th>分類名稱</th>
-                              <th align="center">排序</th>
-                              <th width="140px" align="center">編輯/刪除</th>
-                            </tr>
-                            <tr>
-                              <td align="center"><input class="the_one" id="" name="" type="text" value="最新上市"></td>
-                              <td align="center">
-                                <select class="the_one the_sequence" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類排序">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3" selected="selected">3</option>
-                                </select>
-                              </td>
-                              <td align="right">
-                                <a class="btn_tools" href="#">新增子分類</a>
-                                <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
-                              </td>
-                            </tr>
-                            <tr class="sub_classification">
-                              <td align="center">
-                                <input class="the_one" id="" name="" type="text" value="子分類1">
-                              </td>
-                              <td align="center">
-                              </td>
-                              <td align="right">
-                                <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td align="center"><input class="the_one" id="" name="" type="text" value="熱門商品"></td>
-                              <td align="center">
-                                <select class="the_one the_sequence" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類排序">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3" selected="selected">3</option>
-                                </select>
-                              </td>
-                              <td align="right">
-                                <a class="btn_tools" href="#">新增子分類</a>
-                                <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td align="center">
-                                <input class="the_one" id="" name="" type="text" value="">
-                                <p class="parsley-errors-list filled" id=""><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span class="parsley-required">限25個字</span></p>
-                              </td>
-                              <td align="center">
-                                <select class="the_one the_sequence" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類排序">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3" selected="selected">3</option>
-                                </select>
-                              </td>
-                              <td align="right">
-                                <a class="btn_tools" href="#">新增子分類</a>
-                                <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
-                              </td>
-                            </tr>
-                        </table>
+                    <div class="product_list_data for_goods_edit for_sort_edit">
+                        <ul class="for_product_info">
+                            <li class="top_title clearfix">
+                                <div class="fillin_box sort_name">
+                                    <p>分類名稱</p>
+                                </div>
+                                <div class="fillin_box the_sequence">
+                                    <p align="center">排序</p>
+                                </div>
+                                <div class="fillin_box edit_tools">
+                                    <p width="140px" align="center">編輯/刪除</p>
+                                </div>
+                            </li>
+                            <li class="main_sort clearfix">
+                                <div class="fillin_box sort_name">
+                                    <input class="the_one" id="" name="" type="text" value="最新上市" placeholder="請填入主項目名稱">
+                                </div>
+                                <div class="fillin_box the_sequence">
+                                    <select class="the_one select_sequence" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類排序">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3" selected="selected">3</option>
+                                    </select>
+                                </div>
+                                <div class="fillin_box edit_tools">
+                                    <a class="btn_tools" href="#">新增子分類</a>
+                                    <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
+                                </div>
+                                <ul class="sub_sort clearfix" >
+                                    <li class="clearfix">
+                                        <div class="fillin_box sort_name">
+                                            <input class="the_one" id="" name="" type="text" value="子分類1" placeholder="請填入子項目名稱">
+                                        </div>
+                                        <div class="fillin_box edit_tools">
+                                            <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="fillin_box sort_name">
+                                            <input class="the_one" id="" name="" type="text" value="子分類2" placeholder="請填入子項目名稱">
+                                        </div>
+                                        <div class="fillin_box edit_tools">
+                                            <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main_sort clearfix">
+                                <div class="fillin_box sort_name">
+                                    <input class="the_one" id="" name="" type="text" value="熱門商品" placeholder="請填入主項目名稱">
+                                    <p class="parsley-errors-list filled" id=""><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span class="parsley-required">限25個字</span></p>
+                                </div>
+                                <div class="fillin_box the_sequence">
+                                    <select class="the_one select_sequence" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類排序">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3" selected="selected">3</option>
+                                    </select>
+                                </div>
+                                <div class="fillin_box edit_tools">
+                                    <a class="btn_tools" href="#">新增子分類</a>
+                                    <a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除分類"></i></a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="reportDataBox for_goods_edit">
                         <div class="sub_tools clearfix">

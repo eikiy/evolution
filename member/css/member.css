@@ -1680,17 +1680,12 @@
 .for_goods_edit {
     margin-bottom: 0px;
 }
-.for_goods_edit .for_product_info tr.sub_classification td:first-child{
-  padding-left: 25px; 
-  border-left: 5px solid #ebebeb; 
-}
 .for_goods_edit .for_product_info td {
     padding: 10px 0px;
 }
 .for_goods_edit .the_money, .for_goods_edit .the_stock {
     max-width: 88px;
 }
-
 .for_goods_edit .the_photo {
     width: 60px;
     height: 60px;
@@ -1723,25 +1718,66 @@
     height: auto;
     margin-right: 10px;
 }
-.for_classification_edit .for_product_info td{ 
-  padding: 10px 5px; 
+/*購物網站 - 商品設定相關 END*/
+
+/*分類*/
+.for_sort_edit .the_one{    
+  padding: 8px 10px;
+  height: 42px;
 }
-.for_classification_edit td:first-child{
-  min-width: 180px;
+.for_sort_edit .for_product_info .top_title{
+  border: 1px solid #e4e4e4;
+  border-width: 1px 0 1px 0;
+  padding: 5px 0;
 }
-.for_classification_edit select.the_sequence{
+.for_sort_edit .for_product_info .top_title p{
+  font-weight: bold;
+  color: #666;
+}
+.for_sort_edit .for_product_info .fillin_box{ 
+  float: left;
+  padding: 10px; 
+}
+.for_sort_edit .for_product_info .sort_name{
+  width: calc(100% - 262px);
+}
+.for_sort_edit .for_product_info .edit_tools{
+  float: right;
+  text-align: right;
+  width: 100%;
+  max-width: 190px;
+}
+.for_sort_edit .for_product_info .the_sequence{
+  width: 72px;
+}
+.for_sort_edit select.select_sequence{
   max-width: 60px;
   min-width: 60px;
 }
-.for_classification_edit .parsley-errors-list{
+.for_sort_edit .parsley-errors-list{
   text-align: left;
   display: block;
 }
-.for_classification_edit .parsley-errors-list i{
+.for_sort_edit .parsley-errors-list i{
   padding: 0 5px 0  0;
 }
-
-/*購物網站 - 商品設定相關 END*/
+.for_sort_edit .for_product_info .main_sort .edit_tools{
+  padding: 15px 5px 0px 5px;
+}
+.for_sort_edit .main_sort{
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
+}
+.for_sort_edit .main_sort .sub_sort{
+  float: left; 
+  width: 100%;
+}
+.for_sort_edit .main_sort .sub_sort li{
+  padding-left: 25px; 
+  border: none;
+  border-top: dashed 1px #ebebeb;
+}
+/*分類 END*/
 
 /* Parsley */
 .parsley-errors-list {
@@ -1952,6 +1988,29 @@
         margin-top: 15px;
         padding: 8px 15px;
     }
+    .product_list_data .for_product_info{
+      border-top: 1px solid #e4e4e4;
+    }
+    .for_sort_edit .for_product_info .top_title{
+      display: none;
+    }
+    .for_sort_edit .for_product_info .sort_name{
+      width: 100%;
+    }
+    .for_sort_edit .for_product_info .sort_name .the_one{
+      width: 100%;
+    }
+    .for_sort_edit .main_sort .sub_sort li{ 
+      border-left: 2px solid #ebebeb;
+      padding: 0; 
+    }
+    .for_sort_edit .for_product_info .sub_sort .sort_name{
+      width: calc(100% - 60px);
+    }
+    .for_sort_edit .for_product_info .sub_sort i{
+      line-height: 30px;
+      padding: 0px 15px 0  8px;
+    }
 }
 @media (max-width: 600px) {
   p {
@@ -2055,12 +2114,17 @@
     font-size: 13px;
     min-width: 50px;
     padding: 2px 5px;
+    height: 30px;
   }
   .for_goods_edit .the_delivery_period{ 
     min-width: 110px; 
   }
   .orderSearch .setBox .fillinBox .calendar {
     width: calc(100% - 89px);
+  }
+  .for_sort_edit .for_product_info .main_sort .edit_tools{
+    padding: 10px;
+    width: initial;
   }
 }
 @media (max-width: 500px) {
