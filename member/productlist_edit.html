@@ -17,10 +17,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
 
-    <!-- Select2 -->
-    <link href="select/css/select2.min.css" rel="stylesheet" />
-    <script src="select/js/select2.min.js"></script>
-
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
     <script type="text/javascript">
@@ -29,11 +25,6 @@
               removalDelay: 300,
               mainClass: 'mfp-fade'
             });
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.js-example-basic-multiple').select2();
         });
     </script>
     <style type="text/css">
@@ -186,25 +177,72 @@
                                         </div>
                                         <p class="the_reminder">有助於確保您的網站出現在恰當的搜尋結果中。</p>
                                     </li>
-                                    <li>
+                                    <li class="">
                                         <label for=""><p class="label_title">商品所屬分類</p></label>
-                                        <div class="styled-select w408">
-                                            <!-- <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇主分類">
-                                                <option value="0" selected="selected" class="gray">請選擇主分類</option>
-                                                <option value="1">主分類1</option>
-                                            </select> -->
-                                            <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
-                                                <optgroup label="冷凍宅配商品">
-                                                    <option value="">一夜干</option>
-                                                    <option value="">鮭魚</option>
-                                                    <option value="">鮮蝦</option>
-                                                </optgroup>
-                                                <optgroup label="常溫商品">
-                                                    <option value="">五穀米</option>
-                                                    <option value="">地瓜粉</option>
-                                                    <option value="">低筋麵粉</option>
-                                                </optgroup>
-                                            </select>
+                                        <div class="select_sort">
+                                            <div class="Selected_sort">
+                                                <p><span>聖誕節限定<a href="#"><i class="fas fa-times"></i></a></span></p>
+                                                <p><span>The department stores are crowded with Christmas shoppers. <a href="#"><i class="fas fa-times"></i></a></span></p>
+                                                <p><span>到星巴克挑耶誕禮這2天全品項85折再送買一送一喔！<a href="#"><i class="fas fa-times"></i></a></span></p>
+                                                <p><span>實在很好奇如果文字太長太長～究竟會變怎麼樣呢??<a href="#"><i class="fas fa-times"></i></a></span></p>
+                                            </div>
+                                            <!-- 主項目 -->
+                                            <!-- 這邊要幫我控制位置喔！因為內容高度是變動的 -->
+                                            <!-- 而 option_list 內容高度需 - 2px (外框線高度)，-->
+                                            <!-- 點選到會變灰底帶出到 Selected_sort -->
+                                            <ul class="option_list" style="top: 107px;"> 
+                                                <li>
+                                                    <div>
+                                                        <div class="the_checkbox">
+                                                            <input type="checkbox" name="a" id="a1" value="一夜干">
+                                                            <label for="a1">聖誕節限定</label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <div class="the_checkbox">
+                                                            <input type="checkbox" name="b" id="b1" value="鮭魚">
+                                                            <label for="b1">到星巴克挑耶誕禮這2天全品項85折再送買一送一</label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="select_sort w408">
+                                            <div class="Selected_sort">
+                                                <p><span>一夜干<a href="#"><i class="fas fa-times"></i></a></span></p>
+                                            </div>
+                                            <!-- 子項目 -->
+                                            <!-- 這邊要幫我控制位置喔！因為內容高度是變動的 -->
+                                            <!-- 而 option_list 內容高度需 - 2px (外框線高度)，-->
+                                            <!-- 點選到會變灰底帶出到 Selected_sort -->
+                                            <ul class="option_list" style="top: 41px;">
+                                                <li>
+                                                    <div>
+                                                        <div class="the_checkbox">
+                                                            <input type="checkbox" name="a" id="aaa" value="一夜干">
+                                                            <label for="aaa">一夜干</label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <div class="the_checkbox">
+                                                            <input type="checkbox" name="b" id="bbb" value="鮭魚">
+                                                            <label for="bbb">鮭魚</label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <div class="the_checkbox">
+                                                            <input type="checkbox" name="b" id="ccc" value="鮮蝦">
+                                                            <label for="ccc">鮮蝦</label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
                                         <p class="the_reminder">請前往會員中心 > 我的商店 > 商品分類，自行設定顯示名稱</p>
                                     </li>

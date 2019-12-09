@@ -1718,6 +1718,89 @@
     height: auto;
     margin-right: 10px;
 }
+
+/*分類 偽下拉*/
+.select_sort{ 
+  position: relative; 
+  border: 1px solid #e0e0e0; 
+  background-color: #fff; 
+  min-height: 40px; 
+  padding: 6px 30px 2px 8px; 
+  margin-bottom: 5px; 
+  background: url(//img.holkee.com/main/icons/icon_arr.png) right center no-repeat #fff;
+}
+.select_sort:hover{ 
+  border-color: #9e9e9e;
+}
+.select_sort ul.option_list{ 
+  position: absolute; 
+  z-index: 2; 
+  left: 0px; 
+  border: 1px solid #9e9e9e; 
+  width: 100%; 
+  text-align: center; 
+  background-color: #fff;
+}
+.select_sort ul.option_list li{ 
+  width: 100%; 
+  padding-bottom: 0; 
+  border-bottom: 1px solid #e0e0e0;
+}
+.select_sort ul.option_list li:last-child{ 
+  border: none; 
+}
+.select_sort ul.option_list input[type=checkbox], .setBox .select_sort  ul.option_list input[type=radio]{ 
+  visibility:hidden;  
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  min-height: 40px; 
+  display: block; border:none;
+}
+.select_sort ul.option_list .the_checkbox{ 
+  position: relative; 
+}
+.select_sort ul.option_list .the_radio{ 
+  position: absolute;
+}
+.select_sort ul.option_list .the_radio label, .select_sort ul.option_list .the_checkbox label { 
+  width: 100%; 
+  color:#333; 
+  padding: 8px 15px; 
+  text-align: left; 
+  min-height: 40px; 
+  cursor: pointer; z-index: 1; 
+  font-size: 15px; 
+  line-height: 24px; 
+  display: block;
+}
+.select_sort ul.option_list .the_radio input[type=radio]:checked + label,.setBox .select_sort  ul.option_list .the_checkbox input[type=checkbox]:checked + label { 
+  background-color: #f1f1f1;
+}
+.Selected_sort { 
+  width: 100%; 
+  text-align: left;
+}
+.Selected_sort p{ 
+  display: inline-block; 
+  position: relative; 
+  border:1px solid #e0e0e0; 
+  border-radius: 4px; 
+  padding:3px 25px 3px 5px; 
+  color: #333; 
+  background-color: #f9f9f9; 
+  margin: 0 5px 5px 0;
+}
+.Selected_sort p a{ 
+  padding:0 5px; 
+  color: #999; 
+  position: absolute; 
+  top: 0; 
+  right: 3px; 
+  line-height: 28px;
+}
+/*分類偽下拉 END*/
 /*購物網站 - 商品設定相關 END*/
 
 /*分類*/
@@ -2079,8 +2162,14 @@
   .setBox .fillinBox input, .setBox .fillinBox textarea {
     font-size: 13px; }
 
-  .setBox .styled-select select {
+  .setBox .styled-select select, .Selected_sort p {
     font-size: 13px; }
+
+  .Selected_sort p a{
+   line-height: 24px; }
+
+  .select_sort ul.option_list .the_radio label, .select_sort ul.option_list .the_checkbox label{
+    font-size: 13px; line-height: 18px; min-height: inherit; }
 
   .reportDataBox .sub_tools .searchBox input {
     max-width: 120px; }
