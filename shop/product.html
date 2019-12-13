@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <title>holkee - 全部商品</title>
+        <meta name='description' content=""/>
+        <meta name='keywords' content=""/>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="on-server/css/fontawesome-all.css">
+        <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="css/shop.css">
+        <script type="text/javascript" src="js/menu.js"></script>
+
+        <!-- Pushy CSS -->
+        <link rel="stylesheet" href="mobilemenu/pushy.css">
+        
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+        <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    </head>
+    <body>
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-left" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+                    <li class="pushy-link">
+                        <a href="https://www.holkee.com/ex-apparel-zh-tw" target="_blank">首頁</a>
+                    </li>
+                    <li class="pushy-link">
+                        <a href="product.html">全部商品</a>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>聖誕節限時折扣</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">高領上衣．限時1件折100</a></li>
+                            <li class="pushy-link"><a href="#">保暖內著．限時2件680元</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link">
+                        <a href="#">人氣預訂</a>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>優惠組合</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">羽絨外套．2件5折</a></li>
+                            <li class="pushy-link"><a href="#">holkee 精選．2件9折</a></li>
+                            <li class="pushy-link"><a href="#">秋冬精選．1件499起</a></li>
+                            <li class="pushy-link"><a href="#">精選組合．2件498</a></li>
+                            <li class="pushy-link"><a href="#">精選組合．2件598</a></li>
+                            <li class="pushy-link"><a href="#">居家內著．2件75折</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>優惠組合</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">上身類</a></li>
+                            <li class="pushy-link"><a href="#">七分 / 長袖上衣</a></li>
+                            <li class="pushy-link"><a href="#">針織衫 / 毛衣</a></li>
+                            <li class="pushy-link"><a href="#">外套 / 罩衫 / 大衣</a></li>
+                            <li class="pushy-link"><a href="#">襯衫</a></li>
+                            <li class="pushy-link"><a href="#">短袖上衣</a></li>
+                            <li class="pushy-link"><a href="#">無袖上衣</a></li>
+                            <li class="pushy-link"><a href="#">細肩背心</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link">
+                        <a href="notes.html">退換貨及退款須知</a>
+                    </li>
+                    <li class="pushy-link">
+                        <a href="transport.html">運送服務</a>
+                    </li>
+                    <li class="pushy-link">
+                        <a href="terms.html">其他條款</a>
+                    </li>
+                    <li class="pushy-link">
+                        <a href="service.html">客服中心</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+        <div id="container">
+            <header class="HeaderBox">
+                <nav class="Menu ContentsBox clearfix">
+                    <h1 class="logo"><a href="https://www.holkee.com/ex-apparel-zh-tw" target="_blank"><img src="images/logo_test_03.jpg" alt="LOGO"></a></h1>
+                    <!-- <h1><a href="index.html">流行時尚。CITY</a></h1> -->
+                    <ul class="menu">
+                        <li><p><a href="https://www.holkee.com/ex-apparel-zh-tw" target=")button">首頁</a></p></li><!-- 連至微電商 -->
+                        <li><p class="btn_in"><a href="product.html">全部商品</a></p></li>
+                        <li><p><a href="notes.html">退換貨及退款須知</a></p></li>
+                        <li><p><a href="transport.html">運送服務</a></p></li>
+                        <li><p><a href="terms.html">其他條款</a></p></li>
+                        <li><p><a href="service.html">客服中心</a></p></li>
+                    </ul>
+                    <button class="menu-btn"><span></span></button>
+                </nav>
+            </header>
+            <div class="shoppingcar_icon">
+                <!-- 全部商品頁面需要TOP嗎?  -->
+                <a class="btn_car btn_go_up" href="#" title="TOP"><i class="fas fa-arrow-up"></i></a>
+                <a class="btn_car popup-link" href="#popup" title="開啟購物車列表"><i class="fas fa-shopping-cart"></i><span class="nb">1</span></a>
+                <div class="btn_car btn_share">
+                    <a class="go_share" title="分享">
+                        <i class="fas fa-share-alt"></i>
+                    </a>
+                    <ul class="share_web_list">
+                        <li><a class="fb" href="#" title="分享至 Facebook"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a class="twitter" href="#" title="分享至 Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="line" href="#" title="分享至 Line"><i class="fab fa-line"></i></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <main class="shopping_contents side_menu">
+                <section class="ContentsBox clearfix">
+                    <ul class="left_side_menu">
+                        <li>
+                            <h3><a href="product.html">全部商品</a></h3><!-- 固定顯示 -->
+                        </li>
+                        <li class="list_arr arr_down">
+                            <h3><a href="#">聖誕節限時折扣</a></h3>
+                            <ul class="sub_menu_sort">
+                                <li>
+                                    <p><a href="#">高領上衣．限時1件折100</a></p>
+                                    <p><a href="#">保暖內著．限時2件680元</a></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3><a href="#">人氣預訂</a></h3>
+                        </li>
+                        <li class="list_arr arr_down">
+                            <h3><a href="#">優惠組合</a></h3>
+                            <ul class="sub_menu_sort">
+                                <li>
+                                    <p><a href="#">羽絨外套．2件5折</a></p>
+                                    <p><a href="#">holkee 精選．2件9折</a></p>
+                                    <p><a href="#">秋冬精選．1件499起</a></p>
+                                    <p><a href="#">精選組合．2件498</a></p>
+                                    <p><a href="#">精選組合．2件598</a></p>
+                                    <p><a href="#">居家內著．2件75折</a></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list_arr arr_down">
+                            <h3><a href="#">上身類</a></h3>
+                            <ul class="sub_menu_sort">
+                                <li>
+                                    <p><a href="#">七分 / 長袖上衣</a></p>
+                                    <p><a href="#">針織衫 / 毛衣</a></p>
+                                    <p><a href="#">外套 / 罩衫 / 大衣</a></p>
+                                    <p><a href="#">襯衫</a></p>
+                                    <p><a href="#">短袖上衣</a></p>
+                                    <p><a href="#">無袖上衣</a></p>
+                                    <p><a href="#">細肩背心</a></p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="right_product_info clearfix">
+                        <p class="breadcrumb"><a href="product.html">全部商品</a> / <span>人氣預訂</span></p>
+                        <div class="top_contents clearfix">
+                            <h2 class="top_title">人氣預訂</h2><!-- 到星巴克挑耶誕禮這2天全品項85折再送買一送一喔！ -->
+                            <div class="tools">
+                                <div class="the_select">
+                                    <select class="" name="" required="" data-parsley-min="1" data-parsley-min-message="商品排序">
+                                        <option value="0">上架時間：新到舊</option>
+                                        <option value="1">上架時間：舊到新</option>
+                                        <option value="2">價格：由高至低</option>
+                                        <option value="3">價格：由低至高</option>
+                                        <option value="4">Newest to Oldest</option> <!-- 測試英文寬度 -->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="product_list clearfix">
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-01.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>80年代造型套裝</h3>
+                                    <p>NT$2000</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-02.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>情侶裝</h3>
+                                    <p>NT$2800</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-03.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>曲線紅洋裝</h3>
+                                    <p>NT$890</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-04.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>派對粉紅緊身裙</h3>
+                                    <p>NT$890</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-05.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>時尚紅大衣</h3>
+                                    <p>NT$1299</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="goods.html">
+                                <div class="photo"><img src="images/img-06.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>奧黛麗赫本洋裝(白)</h3>
+                                    <p>NT$890</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-07.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>80年代造型套裝</h3>
+                                    <p>NT$1800</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-08.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>運動風上衣</h3>
+                                    <p>NT$650</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-09.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>休閒橫條組</h3>
+                                    <p>NT$750</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-10.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>經典黑蕾絲洋裝</h3>
+                                    <p>NT$850</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-11.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>純白單色洋裝</h3>
+                                    <p>NT$599</p>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_info.html">
+                                <div class="photo"><img src="images/img-12.jpg" width="100%"></div>
+                                <div class="titleBox">
+                                    <h3>精緻印花上衣</h3>
+                                    <p>NT$699</p>
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="simple-pagination light-theme pageBox">
+                            <ul>
+                                <li class="disabled"><span class="current prev">Prev</span></li>
+                                <li class="active"><span class="current">1</span></li>
+                                <li><a href="#page-2" class="page-link">2</a></li>
+                                <li><a href="#page-3" class="page-link">3</a></li>
+                                <li class=""><span class="ellipse clickable">…</span></li>
+                                <li><a href="#page-69" class="page-link">69</a></li>
+                                <li><a href="#page-70" class="page-link">70</a></li>
+                                <li><a href="#page-2" class="page-link next">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="shopping_FooterBox">
+                <div class="ContentsBox">
+                    <div class="navbar clearfix">
+                        <p>Powered by</p>
+                        <h4 class="logo"><a href="http://www.holkee.com/" target="_blank"><img src="images/logo.png" height="100%" alt="LOGO"></a></h4>
+                    </div>
+                    <div class="copyright clearfix">
+                        <p>Copyrights © 2019 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Pushy JS -->
+        <script src="mobilemenu/pushy.js"></script>
+    </body>
+</html>
+
+
+
