@@ -1785,6 +1785,12 @@
 .select_sort ul.option_list li:last-child{ 
   border: none; 
 }
+.select_sort ul.option_list li h3.sub_title{
+   font-weight: bold;
+   padding: 8px 15px;
+   text-align: left;
+   color: #333;
+}
 .select_sort ul.option_list input[type=checkbox], .setBox .select_sort  ul.option_list input[type=radio]{ 
   visibility:hidden;  
   position:absolute; 
