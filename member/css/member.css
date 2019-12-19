@@ -1814,11 +1814,11 @@
 .select_sort ul.option_list .the_radio input[type=radio]:checked + label,.setBox .select_sort  ul.option_list .the_checkbox input[type=checkbox]:checked + label { 
   background-color: #f1f1f1;
 }
-.Selected_sort { 
+.selected_sort { 
   width: 100%; 
   text-align: left;
 }
-.Selected_sort p{ 
+.selected_sort p{ 
   display: inline-block; 
   position: relative; 
   border:1px solid #e0e0e0; 
@@ -1828,13 +1828,14 @@
   background-color: #f9f9f9; 
   margin: 0 5px 5px 0;
 }
-.Selected_sort p a{ 
+.selected_sort p a{ 
   padding:0 5px; 
   color: #999; 
   position: absolute; 
   top: 0; 
   right: 3px; 
   line-height: 28px;
+  cursor: pointer;
 }
 /*分類偽下拉 END*/
 /*購物網站 - 商品設定相關 END*/
@@ -2198,10 +2199,10 @@
   .setBox .fillinBox input, .setBox .fillinBox textarea {
     font-size: 13px; }
 
-  .setBox .styled-select select, .Selected_sort p {
+  .setBox .styled-select select, .selected_sort p {
     font-size: 13px; }
 
-  .Selected_sort p a{
+  .selected_sort p a{
    line-height: 24px; }
 
   .select_sort ul.option_list .the_radio label, .select_sort ul.option_list .the_checkbox label{
