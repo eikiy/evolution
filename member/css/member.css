@@ -1744,6 +1744,25 @@
   cursor: pointer;
   z-index: 1;
 }
+.select_sort a.the_close{
+  content: "";
+  width: 40px;
+  height: 40px;
+  color: #666;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 1;
+  display: -webkit-flex; 
+  display: flex; 
+  -webkit-align-items: center; 
+  align-items: center; 
+  -webkit-justify-content: center; 
+  justify-content: center;
+}
 .select_sort p{
   color: #b5b5b5; 
   line-height: 25px;
