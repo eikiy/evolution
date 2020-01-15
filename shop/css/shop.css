@@ -103,8 +103,9 @@ html{ height: 100%; }
 .productBox .rightInfoBox .styleBox a.goods_none { cursor: not-allowed; opacity: .5;}
 .productBox .rightInfoBox .styleBox a.goods_none:hover{ border-color: #dadada; opacity: .5; }
 
-
-.productBox .rightInfoBox .select_quantity{ width: 100%; max-width: 200px; position: relative; margin-bottom: 20px; border: 2px solid #dadada; border-radius: 4px; overflow: hidden;}
+.productBox .rightInfoBox .quantity_contents{ width: 100%; }
+.productBox .rightInfoBox .quantity_contents p.stock{ float: left; padding: 10px 0; color: #555;  margin-left: 10px; font-size: 14px; }
+.productBox .rightInfoBox .select_quantity{ float: left; width: 100%; max-width: 200px; position: relative; margin-bottom: 15px; border: 2px solid #dadada; border-radius: 4px; overflow: hidden;}
 .productBox .rightInfoBox .select_quantity input.qty_input{ width:100%; height: 40px; line-height: 40px; font-size: 17px; border-radius: 4px; text-align: center; -webkit-appearance: none; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 .productBox .rightInfoBox .select_quantity input.qty_input::-webkit-outer-spin-button, .productBox .rightInfoBox .select_quantity input.qty_input::-webkit-inner-spin-button{ -webkit-appearance: none !important; margin: 0; }
 .productBox .rightInfoBox .select_quantity input.qty_input[type=number]:focus{ border-color: #cac5c5;}
@@ -461,6 +462,7 @@ span.ellipse.clickable { cursor: pointer;}
 	.setBox .order_editBox .the_address input.input_area{ max-width: 105px; margin-top: 0;}
 	.shopping_contents ul.pageBox li p a{ padding: 8px 6px;}
 	.productBox .product_info th, .productBox .product_info td{ padding: 5px 0; }
+	.productBox .rightInfoBox .select_quantity{ max-width: 160px; }
 }
 
 @media (max-width:420px){
@@ -489,6 +491,7 @@ span.ellipse.clickable { cursor: pointer;}
 	.shopping_contents ul.product_list li p, .productBox .rightInfoBox .btnBox a.btn, .productBox .product_info, .productBox .rightInfoBox p.ex{ font-size: 13px;}
 	.product_description .description p.p_info{ font-size: 13px; line-height: 20px;}
 	.productBox .rightInfoBox .styleBox a{ font-size: 13px; line-height: 15px;}
+	.productBox .rightInfoBox .select_quantity{ max-width: 130px; }
 	.right_product_info .top_contents h2.top_title, .productBox .rightInfoBox h3.product_title{ font-size: 17px; line-height: 26px; }
 }
 
