@@ -37,7 +37,7 @@ html{ height: 100%; }
 .shopping_contents ul.product_list{ width: 100%; padding-bottom: 30px; }
 .shopping_contents ul.product_list li{ width:calc( 25%);  float: left; padding:25px;}
 .shopping_contents ul.product_list li .titleBox{min-height: 85px; padding: 0 18px; background-color: #fff;}
-.shopping_contents ul.product_list li h3{ color: #333; font-size: 17px; line-height: 20px; margin: 10px 0 5px 0; max-height: 40px; overflow-y: hidden; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 20px; height: 20px * 2;}
+.shopping_contents ul.product_list li h3{ color: #333; font-size: 17px; line-height: 20px; margin: 10px 0 5px 0; max-height: 40px; overflow-y: hidden; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 20px; height: 20px * 2; word-wrap: break-word; word-break: break-all;}
 .shopping_contents ul.product_list li p{font-size: 15px; font-family: 'Roboto' !important, sans-serif; font-style: 600; color: #F94F4F; padding-top: 5px;}
 .shopping_contents ul.product_list li a{ box-shadow: 0 0 10px rgba(0,0,0,.2); background-color: #fff; display: inline-block; width: 100%; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 .shopping_contents ul.product_list li a:hover{ box-shadow:rgba(0,0,0,0.25) 0px 14px 35px, rgba(0,0,0,0.22) 0px 10px 18px; }
@@ -347,7 +347,7 @@ ul.shopping_car_list .car_delete a:hover{ color: #27d0ca; }
 .setBox .order_editBox p.info_show{ float: left; color: #333; /*width:calc(100% - 110px);*/ padding: 8px 0px; font-size: 15px; line-height: 24px; min-height: 24px;}
 .setBox .order_editBox p.label_title{font-size: 13px;}
 .setBox .order_editBox .purchaseDetails{font-size: 14px; border-top: 1px solid #e0e0e0;}
-.setBox .order_editBox .purchaseDetails td, .setBox .order_editBox .purchaseDetails th{ padding: 15px 0; vertical-align: middle; white-space: nowrap;}
+.setBox .order_editBox .purchaseDetails td, .setBox .order_editBox .purchaseDetails th{ padding: 15px 0; vertical-align: middle; word-wrap: break-word;}
 .setBox .order_editBox .purchaseDetails a{display: block; color: #666;}
 .setBox .order_editBox .purchaseDetails a:hover{ color: #27d0ca; }
 .setBox .order_editBox .purchaseDetails th{ color: #666; background-color: #f9f9f9; font-weight: normal; font-size: 13px; }
