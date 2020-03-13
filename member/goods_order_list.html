@@ -12,38 +12,40 @@
 <!-- <script src="https://use.fontawesome.com/ca17a34927.js"></script> -->
 <link rel="stylesheet" href="on-server/css/fontawesome-all.css">
 <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
-<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
-<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
+<!-- <script src="magnific-popup/jquery.magnific-popup.js"></script> -->
 
-<!-- Magnific Popup core CSS file -->
-<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-<!-- Magnific Popup core JS file -->
-<script src="magnific-popup/jquery.magnific-popup.js"></script>
+
+<link rel="stylesheet" href="https://www.holkee.com/scripts/libs/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="https://www.holkee.com/css/main.min.css" type="text/css" />
+<link rel="stylesheet" href="https://www.holkee.com/scripts/libs/magnific-popup/magnific-popup.min.css" type="text/css" />
+<link rel="stylesheet" href="css/member.css" type="text/css" />
+<script src="https://www.holkee.com/scripts/main.min.js"></script>
+
 <script type="text/javascript">
-$(document).ready(function() {
-    $('.popup-link').magnificPopup({
-      removalDelay: 300,
-      mainClass: 'mfp-fade'
+    $(function(){
+        $('.popup-link').magnificPopup({
+          removalDelay: 300,
+          mainClass: 'mfp-fade'
+        });
     });
-});
 </script>
 
 </head>
 <body>
- <header class="HeaderBox">
+<header class="HeaderBox">
     <nav class="Menu ContentsBox clearfix">
         <h1 class="logo"><a href="index.html">holkee</a></h1>
-        <ul class="menu">
+        <!-- <ul class="menu">
             <li><p class="btn_in"><a>會員中心</a></p></li>
             <li><p><a href="#">免費模板</a></p></li>
             <li><p><a href="#">最新消息</a></p></li>
-        </ul>
+        </ul> -->
         <ul class="userBox">
-            <li class="noticeBox"><a><p><i class="far fa-bell"></i>
+            <li class="noticeBox" style="display: none;"><a><p><i class="far fa-bell"></i>
                 <span class="text">通知</span>
                 <span class="bell_nb">9</span></p></a>
                 <div class="notificationBox"=>
@@ -103,18 +105,15 @@ $(document).ready(function() {
             <li class="profile_photo">
                 <a><div class="header_profile_img"><img src="https://graph.facebook.com/1324292190919409/picture?width=40&amp;height=40" width="100%"></div>
                 <p class="userName">Eikiy Chang</p></a>
-                <div class="theUserBox">
+                <div class="theUserBox dropdown-menu" aria-labelledby="dropdownMenuLink" x-placement="bottom-start" style="min-width: 10rem; position: absolute; transform: translate3d(-64px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
                     <ul>
-                        <li><p><a href="#">會員中心</a></p></li>
-                        <li class="mob_show"><p><a href="#">免費模板</a></p></li>
-                        <li class="mob_show"><p><a href="#">最新消息</a></p></li>
-                        <li><p><a href="#">我的收藏</a></p></li>
-                        <li><p><a href="#">登出</a></p></li>
+                        <li><p><a href="/themes">精選主題</a></p></li>
+                        <li><p><a href="/member">會員中心</a></p></li>
+                        <li><p><a href="/login/logout">登出</a></p></li>
                     </ul>
                 </div>
             </li>
         </ul>
-
     </nav>
 </header>
 <main class="main_contents">
@@ -208,50 +207,53 @@ $(document).ready(function() {
                           <th align="center">取消訂單</th>
                         </tr>
                         <tr>
-                          <td align="center"><a class="popup-link" href="#popup2">107788</a></td>
+                          <td align="center"><a class="c_blue popup-link" href="#popup2">107788</a></td>
                           <td align="center">SandyYu</td>
                           <td align="center">2017.12.12</td>
                           <td align="center">$3100</td>
                           <td align="center">信用卡付款</td>
-                          <td align="center">已付款</td>
+                          <td align="center"><a class="c_blue" href="#">已付款</a></td>
                           <td align="center">7-11超商取貨</td>
                           <td align="center">新訂單</td><!-- 訂單狀態:1. 新訂單: 未做任何處理 -->
                           <td align="center"><a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除訂單"></i></a></td><!-- 新訂單才會有刪除icon -->
                         </tr>
                         <tr>
-                          <td align="center"><a href="#">107789</a></td>
+                          <td align="center"><a class="c_blue" href="#">107789</a></td>
                           <td align="center">Wade Hsu</td>
                           <td align="center">2017.12.30</td>
                           <td align="center">$2400</td>
                           <td align="center">信用卡付款</td>
-                          <td align="center">已付款</td>
+                          <td align="center"><a class="c_blue" href="#">已付款</a></td>
                           <td align="center">7-11取貨</td>
                           <td align="center">新訂單</td>
                           <td align="center"><a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除訂單"></i></a></td><!-- 新訂單才會有刪除icon -->
                         </tr>
                         <tr>
-                          <td align="center"><a href="#">107790</a></td>
+                          <td align="center"><a class="c_blue" href="#">107790</a></td>
                           <td align="center">Wade Hsu</td>
                           <td align="center">2017.12.31</td>
                           <td align="center">$200</td>
                           <td align="center">信用卡付款</td>
-                          <td align="center">已付款</td>
+                          <td align="center"><a class="c_blue" href="#">已付款</a></td>
                           <td align="center">7-11取貨</td>
                           <td align="center">準備出貨</td><!-- 訂單狀態:2.準備出貨: 當按下"整批取號" -->
                           <td align="center">&nbsp;</td>
                         </tr>
                         <tr>
-                          <td align="center"><a href="#">107791</a></td>
+                          <td align="center"><a class="c_blue" href="#">107791</a></td>
                           <td align="center">Jeff</td>
                           <td align="center">2017.12.31</td>
-                          <td align="center">1680</td>
+                          <td align="center">$1680</td>
+                          <td align="center">超商取貨付款</td>
+                          <td align="center"><a class="c_blue" href="#">未付款</a></td>
                           <td align="center">7-11取貨</td>
                           <td align="center">已出貨</td><!-- 訂單狀態:3.已出貨: 已有物流編號，手動發出貨通知 -->
                           <td align="center">&nbsp;</td>
                         </tr>
                     </table>
                 </div>
-                <ul class="pageBox"> <!-- 最多八個或幾個網站? 就出現頁籤 -->
+                <!-- 最多八個或幾個網站? 就出現頁籤 -->
+                <!-- <ul class="pageBox"> 
                     <li><p><a href="#" class="border">Prev</a></p></li>
                     <li><p><a href="#">1</a></p></li>
                     <li><p><a class="btn_in" href="#">2</a></p></li>
@@ -262,7 +264,7 @@ $(document).ready(function() {
                     <li><p><a href="#">16</a></p></li>
                     <li><p><a href="#">17</a></p></li>
                     <li><p><a href="#" class="border">Next</a></p></li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </div>

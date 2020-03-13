@@ -440,7 +440,7 @@
 .main_contents .sideMenu ul li ul.subMenu {
   display: none; }
 
-.main_contents .sideMenu ul li a span.label_remind {
+.main_contents .sideMenu ul li span.label_remind {
   position: absolute;
   top: 12px;
   right: 14px;
@@ -452,7 +452,7 @@
   font-size: 12px;
   line-height: 22px; }
 
-.main_contents .sideMenu ul li a span.label_nb {
+.main_contents .sideMenu ul li span.label_nb {
   position: inherit;
   top: inherit;
   right: inherit;
@@ -464,7 +464,21 @@
   color: #fff;
   font-size: 12px;
   line-height: 22px; }
-
+.main_contents .sideMenu ul li span.label_VIP {
+  padding: 0px 8px;
+  margin: 0 5px;
+  border-radius: 10px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bb74f1+0,76eae2+100 */
+  background: rgb(187,116,241); /* Old browsers */
+  background: -moz-linear-gradient(45deg,  rgba(187,116,241,1) 0%, rgba(118,234,226,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  rgba(187,116,241,1) 0%,rgba(118,234,226,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  rgba(187,116,241,1) 0%,rgba(118,234,226,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bb74f1', endColorstr='#76eae2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px; 
+}
 .main_contents .sideMenu ul li.enable_store {
     display: none;
 }
@@ -508,7 +522,7 @@
     }
 
     .main_contents .sideMenu input:checked ~ ul.large {
-        height: 192px;
+        height: 256px;
     }
 }
 
@@ -521,7 +535,7 @@
 }
 
 .main_contents .sideMenu.open input:checked ~ ul.large {
-    height: 192px;
+    height: 256px;
 }
 
 /*.main_contents a.open_switch{ position: fixed; font-size: 20px; z-index: 8; cursor: pointer; left: 35px; bottom: 8vh; width: 45px; height: 45px; line-height: 45px; border-radius: 50%; text-align: center; display: block; background-color: #27d0ca; color: #fff;}
@@ -1532,6 +1546,9 @@
 .product_list_data .for_product_info a.btn_tools:hover {
     text-decoration: none;
 }
+.product_list_data .for_product_info a.c_blue{ 
+  color: #27d0ca; 
+}
 .main_contents .gmbBox {
     max-width: 760px;
 }
@@ -1720,15 +1737,15 @@
 }
 
 /*分類 偽下拉*/
-.select_sort{ 
-  position: relative; 
-  border: 1px solid #e0e0e0; 
-  background-color: #fff; 
-  min-height: 40px; 
-  padding: 6px 30px 2px 8px; 
-  margin-bottom: 5px; 
+.select_sort{
+  position: relative;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  min-height: 40px;
+  padding: 6px 30px 2px 8px;
+  margin-bottom: 5px;
 }
-.select_sort:hover{ 
+.select_sort:hover{
   border-color: #9e9e9e;
 }
 .select_sort a.the_arr{
@@ -1745,101 +1762,101 @@
   z-index: 1;
 }
 .select_sort a.the_close{
-  content: "";
-  width: 40px;
-  height: 40px;
-  color: #666;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-size: contain;
-  cursor: pointer;
-  z-index: 1;
-  display: -webkit-flex; 
-  display: flex; 
-  -webkit-align-items: center; 
-  align-items: center; 
-  -webkit-justify-content: center; 
-  justify-content: center;
+    content: "";
+    width: 40px;
+    height: 40px;
+    color: #666;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 1;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 .select_sort p{
-  color: #b5b5b5; 
+  color: #b5b5b5;
   line-height: 25px;
   color: #000;
 }
-.select_sort ul.option_list{ 
-  position: absolute; 
-  z-index: 2; 
-  left: -1px; 
-  border: 1px solid #9e9e9e; 
-  width:calc(100% + 2px); 
-  text-align: center; 
+.select_sort ul.option_list{
+  position: absolute;
+  z-index: 2;
+  left: -1px;
+  border: 1px solid #9e9e9e;
+  width:calc(100% + 2px);
+  text-align: center;
   background-color: #fff;
 }
-.select_sort ul.option_list li{ 
-  width: 100%; 
-  padding-bottom: 0; 
+.select_sort ul.option_list li{
+  width: 100%;
+  padding-bottom: 0;
   border-bottom: 1px solid #e0e0e0;
 }
-.select_sort ul.option_list li:last-child{ 
-  border: none; 
+.select_sort ul.option_list li:last-child{
+  border: none;
 }
 .select_sort ul.option_list li h3.sub_title{
-   font-weight: bold;
-   padding: 8px 15px;
-   text-align: left;
-   color: #333;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-align: left;
+    color: #333;
 }
-.select_sort ul.option_list input[type=checkbox], .setBox .select_sort  ul.option_list input[type=radio]{ 
-  visibility:hidden;  
-  position:absolute; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  min-height: 40px; 
+.select_sort ul.option_list input[type=checkbox], .setBox .select_sort  ul.option_list input[type=radio]{
+  visibility:hidden;
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 40px;
   display: block; border:none;
 }
-.select_sort ul.option_list .the_checkbox{ 
-  position: relative; 
+.select_sort ul.option_list .the_checkbox{
+  position: relative;
 }
-.select_sort ul.option_list .the_radio{ 
+.select_sort ul.option_list .the_radio{
   position: absolute;
 }
-.select_sort ul.option_list .the_radio label, .select_sort ul.option_list .the_checkbox label { 
-  width: 100%; 
-  color:#333; 
-  padding: 8px 15px; 
-  text-align: left; 
-  min-height: 40px; 
-  cursor: pointer; z-index: 1; 
-  font-size: 15px; 
-  line-height: 24px; 
+.select_sort ul.option_list .the_radio label, .select_sort ul.option_list .the_checkbox label {
+  width: 100%;
+  color:#333;
+  padding: 8px 15px;
+  text-align: left;
+  min-height: 40px;
+  cursor: pointer; z-index: 1;
+  font-size: 15px;
+  line-height: 24px;
   display: block;
 }
-.select_sort ul.option_list .the_radio input[type=radio]:checked + label,.setBox .select_sort  ul.option_list .the_checkbox input[type=checkbox]:checked + label { 
+.select_sort ul.option_list .the_radio input[type=radio]:checked + label,.setBox .select_sort  ul.option_list .the_checkbox input[type=checkbox]:checked + label {
   background-color: #f1f1f1;
 }
-.selected_sort { 
-  width: 100%; 
+.selected_sort {
+  width: 100%;
   text-align: left;
 }
-.selected_sort p{ 
-  display: inline-block; 
-  position: relative; 
-  border:1px solid #e0e0e0; 
-  border-radius: 4px; 
-  padding:3px 25px 3px 5px; 
-  color: #333; 
-  background-color: #f9f9f9; 
+.selected_sort p{
+  display: inline-block;
+  position: relative;
+  border:1px solid #e0e0e0;
+  border-radius: 4px;
+  padding:3px 25px 3px 5px;
+  color: #333;
+  background-color: #f9f9f9;
   margin: 0 5px 5px 0;
 }
-.selected_sort p a{ 
-  padding:0 5px; 
-  color: #999; 
-  position: absolute; 
-  top: 0; 
-  right: 3px; 
+.selected_sort p a{
+  padding:0 5px;
+  color: #999;
+  position: absolute;
+  top: 0;
+  right: 3px;
   line-height: 28px;
   cursor: pointer;
 }
@@ -1847,7 +1864,7 @@
 /*購物網站 - 商品設定相關 END*/
 
 /*分類*/
-.for_sort_edit .the_one{    
+.for_sort_edit .the_one{
   padding: 8px 10px;
   height: 42px;
 }
@@ -1860,9 +1877,9 @@
   font-weight: bold;
   color: #666;
 }
-.for_sort_edit .for_product_info .fillin_box{ 
+.for_sort_edit .for_product_info .fillin_box{
   float: left;
-  padding: 10px; 
+  padding: 10px;
 }
 .for_sort_edit .for_product_info .sort_name{
   width: calc(100% - 262px);
@@ -1895,11 +1912,11 @@
   border-bottom: 1px solid #f5f5f5;
 }
 .for_sort_edit .main_sort .sub_sort{
-  float: left; 
+  float: left;
   width: 100%;
 }
 .for_sort_edit .main_sort .sub_sort li{
-  padding-left: 25px; 
+  padding-left: 25px;
   border: none;
   border-top: dashed 1px #ebebeb;
 }
@@ -2209,10 +2226,12 @@
     font-size: 13px; }
 
   .selected_sort p a{
-   line-height: 24px; }
+   line-height: 24px;
+  }
 
-  .select_sort ul.option_list .the_radio label, .select_sort ul.option_list .the_checkbox label{
-    font-size: 13px; line-height: 18px; min-height: inherit; }
+  .select_sort ul.option_list .the_radio label, .select_sort ul.option_list .the_checkbox label {
+    font-size: 13px; line-height: 18px; min-height: inherit;
+  }
 
   .reportDataBox .sub_tools .searchBox input {
     max-width: 120px; }
