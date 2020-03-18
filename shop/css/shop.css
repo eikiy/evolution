@@ -41,7 +41,9 @@ html{ height: 100%; }
 .shopping_contents ul.product_list li p{font-size: 15px; font-family: 'Roboto' !important, sans-serif; font-style: 600; color: #F94F4F; padding-top: 5px;}
 .shopping_contents ul.product_list li a{ box-shadow: 0 0 10px rgba(0,0,0,.2); background-color: #fff; display: inline-block; width: 100%; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 .shopping_contents ul.product_list li a:hover{ box-shadow:rgba(0,0,0,0.25) 0px 14px 35px, rgba(0,0,0,0.22) 0px 10px 18px; }
-.shopping_contents ul.product_list li .photo{ display: block; max-height: 320px;}
+.shopping_contents ul.product_list li .photo{ display: block; max-height: 320px; overflow: hidden;}
+.shopping_contents ul.product_list li.free_user_ad_mob{ display: none; text-align: center; width: 100%; }
+.shopping_contents ul.product_list li.free_user_ad_mob .ad_box{ display: inline-block; width: 300px; height: 250px;}
 
 /*購物網站的header*/
 .HeaderBox{ width: 100%; padding: 12px 0; min-height: 30px; background-color: #fff; border-bottom: 2px solid #27d0ca; z-index: 15; }
@@ -283,7 +285,8 @@ ul.shopping_car_list .car_delete a:hover{ color: #27d0ca; }
 .orderDoneBox ul.sendBox{ border:1px solid #b9edeb; border-width: 1px 0 1px 0; margin-bottom: 40px;}
 
 /*side menu*/
-.side_menu ul.left_side_menu{ float: left; width: 280px; padding: 25px 20px 20px 0; }
+.side_menu .left_side_contents{ float: left; width: 280px;}
+.side_menu ul.left_side_menu{ width: 100%; padding: 25px 20px 20px 0; }
 .side_menu ul.left_side_menu li{ width: 100%; padding-bottom: 5px; }
 .side_menu ul.left_side_menu li h3{ font-size:15px; padding-right:30px; }
 .side_menu ul.left_side_menu li h3 a{ color: #333; display: block; padding: 10px 0;}
@@ -298,6 +301,9 @@ ul.shopping_car_list .car_delete a:hover{ color: #27d0ca; }
 .side_menu ul.sub_menu_sort{ display: none; }
 .side_menu ul.sub_menu_sort li p{ font-size: 13.5px; }
 .side_menu ul.sub_menu_sort li p a{ color: #777; display: block; padding: 10px 0;}
+
+.side_menu .free_user_ad_pc{ width: 100%; padding: 10px 0;}
+.side_menu .free_user_ad_pc .ad_box{ width: 160px;}
 
 .right_product_info { float: left; width: calc(100% - 280px); padding: 10px 0; }
 .right_product_info p.breadcrumb { font-size: 13px; color: #a09292; width: 100%; padding:15px 25px;}
@@ -375,6 +381,11 @@ span.ellipse.clickable { cursor: pointer;}
 .menu-btn span{ position: relative; font-size: 20px; width: 45px; height: 45px; color: #27d0ca; display: block;}
 .menu-btn span::after{ content: "\f0c9"; position: absolute; top: 0px; left:0px; width: 45px; line-height: 45px; text-align: center; display: inline-block; font-family:  Font Awesome\ 5 Free; font-size: inherit; text-rendering: auto; font-weight: 900; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 
+/* Parsley */
+div.parsley-error, a.parsley-error, input.parsley-error, textarea.parsley-error, select.parsley-error, div.parsley-error:focus, a.parsley-error, input.parsley-error:focus, textarea.parsley-error:focus, select.parsley-error:focus { border: 1px solid #f44455 !important; color: #f44455 !important; }
+.parsley-errors-list { display: inline-block; padding: 0 8px; font-size: 14px; color: #ff2121; font-weight: bold; line-height: 32px; }
+.parsley-errors-list i { padding-right: 5px; }
+
 /*==== RWD ====*/
 @media (max-width:1440px){
 	.ContentsBox{ width: 90%; margin: 0 auto; }
@@ -382,13 +393,13 @@ span.ellipse.clickable { cursor: pointer;}
 	.product_description .video_info iframe{ max-width:720px; height:405px; }
 }
 @media (max-width:1250px){
-	.side_menu ul.left_side_menu{ width: 280px; }
+	.side_menu .left_side_contents{ width: 280px; }
 	.right_product_info{ width: calc(100% - 280px); }
 	.shopping_contents ul.product_list li{ width: calc( 50%); }
 	.productBox .rightInfoBox{ max-width: inherit; }
 }
 @media (max-width:1000px){
-	.side_menu ul.left_side_menu{ width: 180px; }
+	.side_menu .left_side_contents{ width: 180px; }
 	.right_product_info { width: calc(100% - 180px); }
 	.shopping_contents ul.product_list li h3{ font-size: 16px; }
 	.shopping_contents ul.product_list li p, .the_select select{ font-size: 14px; }
@@ -401,8 +412,8 @@ span.ellipse.clickable { cursor: pointer;}
 }
 @media (max-width:760px){
 	.HeaderBox{ position: fixed; top: 0; padding: 0; }
-	.HeaderBox ul.menu, .side_menu ul.left_side_menu{ display: none; }
-	.menu-btn{ display: block; }
+	.HeaderBox ul.menu, .side_menu .left_side_contents{ display: none; }
+	.menu-btn, .shopping_contents ul.product_list li.free_user_ad_mob { display: block; }
 	.shopping_contents{ padding-top: 50px;min-height: calc( 100vh - 168px); }
 	.shopping_contents ul.product_list li{ width:50%; padding: 18px 10px; }
 	.HeaderBox h1{ font-size: 18px; }
