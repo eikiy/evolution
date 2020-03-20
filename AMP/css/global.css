@@ -1,0 +1,107 @@
+
+/* CSS Document */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+blockquote, q { quotes: none; }
+blockquote::before, blockquote::after, q::before, q::after { content: ''; content: none; }
+input, textarea { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+abbr, acronym { border: 0; }
+img, amp-img { vertical-align: middle; }
+* { -webkit-text-size-adjust: none; }
+
+.clearfix::after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .clearfix { height: 1%; }
+*:first-child + html .clearfix { min-height: 1%; }
+
+body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button { font-family: 'Roboto', 'Noto Sans TC', 'Arial', '微軟正黑體', '新細明體', 'sans-serif'; font-weight: normal; color: #000; }
+p { font-size: 0.9375em; }
+a { cursor: pointer; text-decoration: none; outline: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
+a:hover { text-decoration: none; }
+*:link, *:visited, *:hover, *:active, *:focus, * { border: none; outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/*======================= 所有section共用CSS ================*/
+.ContentsBox { width: 100%; max-width: 1200px; min-width: 320px; margin: 0 auto; position: relative; z-index: 9; }
+@media (max-width: 1220px) {
+    .ContentsBox { max-width: 90%; }
+}
+.section-base { width: 100%; padding: 80px 0 80px 0; position: relative; }
+@media (max-width: 1000px) {
+    .section-base { padding: 80px 0 50px 0; }
+}
+.background-setting { background-attachment: fixed; background-position: center center; background-repeat: no-repeat; background-size: cover; }
+@media (max-device-width: 1200px) {
+    .background-setting { background-attachment: initial; }
+}
+
+/*main_contents*/
+main.main_contents { width: 100%; }
+h2.top_title { text-align: center; font-size: 2.5rem; } /*未來可能會有的主標題*/
+h3.main_title { text-align: center; font-size: 1.750rem; padding: 15px 0; }
+p.sub_title { text-align: center; margin: 0 auto; max-width: 1000px; font-size: 1rem; padding: 10px 0; }
+p.content_title { font-size: 1.063rem; padding: 10px 0; }
+p.content_title span.required { color: #ff2121; padding-left: 3px; }
+p.content_sub_title { font-size: 0.875rem; padding-bottom: 10px; letter-spacing: 1px; }
+p.btn { text-align: center; padding: 12px 0; }
+p.btn a { cursor: pointer; color: #fff; display: inline-block; padding: 12px 25px; background-color: #333; min-width: 130px; }
+p.btn input[type=submit] { cursor: pointer; color: #fff; display: inline-block; padding: 12px 25px; background-color: #333; min-width: 130px; width: inherit; height: inherit; line-height: inherit; margin-bottom: inherit; border: none; }
+p.btn a:hover, p.btn input[type=submit]:hover { opacity: .9 }
+
+
+/*配色方案 上*/
+/*文字遮罩的顏色不被影響，所以CSS STYLE 會在半透明遮罩的上面*/
+
+/*01 - website*/
+.template_color_website h3.main_title { color: #12ccc4; }
+.template_color_website p.sub_title{ color: #464646; }
+
+/*02 - Pink*/
+.template_color_pink h3.main_title { color: #ff5186; }
+.template_color_pink p.sub_title{ color: #464646; }
+
+/*03 - Green*/
+.template_color_green h3.main_title { color: #8fc320; }
+.template_color_green p.sub_title{ color: #464646; }
+
+/*04 - purple*/
+.template_color_purplen h3.main_title { color: #826dc7; }
+.template_color_purplen p.sub_title{ color: #464646; }
+
+
+/*半透明遮罩 有選擇才會蓋上去*/
+.bg_translucent_k { position: relative; }
+.bg_translucent_k::after { position: absolute; content: ""; width: 100%; height: 100%; display: block; background-color: rgba(0,0,0,.35); top: 0; left: 0; }
+.bg_translucent_k h2.top_title, .bg_translucent_k h3.main_title, .bg_translucent_k p.sub_title { color: #fff; }
+.bg_translucent_k ul.info li p, .bg_translucent_k ul.info li p a { color: #fff; }
+.bg_translucent_k p.content_title, .bg_translucent_k p.content_sub_title, .bg_translucent_k label span { color: #fff; }
+.bg_translucent_k p.btn a { color: #333; background-color: #fff; }
+.bg_translucent_w { position: relative; }
+.bg_translucent_w::after { position: absolute; content: ""; width: 100%; height: 100%; display: block; background-color: rgba(256,256,256,.5); top: 0; left: 0; }
+.bg_translucent_w h2.top_title, .bg_translucent_w h3.main_title, .bg_translucent_w p.sub_title { color: #333; }
+.bg_translucent_w ul.info li p, .bg_translucent_w ul.info li p a { color: #333; }
+.bg_translucent_w p.content_title, .bg_translucent_w p.content_sub_title, .bg_translucent_w label span { color: #333; }
+.bg_translucent_w p.btn a { color: #fff; background-color: #333; }
+
+
+/*配色方案 下*/
+.template_color_website p.btn a{ background-color: #12ccc4;  border-color: transparent;}
+.template_color_website .slidesBox .slider-box .info a.btn { color: #12ccc4; }
+.template_color_website .bg_translucent_k .slidesBox .slider-box .info a.btn { background-color: #12ccc4; }
+
+.template_color_pink p.btn a{ background-color: #ff5186;  border-color: transparent;}
+.template_color_pink .slidesBox .slider-box .info a.btn { color: #ff5186; }
+.template_color_pink .bg_translucent_k .slidesBox .slider-box .info a.btn { background-color: #ff5186; }
+
+.template_color_green p.btn a{ background-color: #8fc320;  border-color: transparent;}
+.template_color_green .slidesBox .slider-box .info a.btn { color: #8fc320; }
+.template_color_green .bg_translucent_k .slidesBox .slider-box .info a.btn { background-color: #8fc320; }
+.template_color_green .socialBox ul.follow_us_icon li a{ background-color: #8bad42;}
+.template_color_green .textBox, .template_color_green .contactBox, .template_color_green .socialBox{ background-color: #ececec; }
+
+.template_color_purplen p.btn a{ background-color: #826dc7;  border-color: transparent;}
+.template_color_purplen .slidesBox .slider-box .info a.btn { color: #826dc7; }
+.template_color_purplen .bg_translucent_k .slidesBox .slider-box .info a.btn { background-color: #826dc7; }
+
+.bg-container { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1; }
+
+/*======================= 所有section共用CSS END ================*/
