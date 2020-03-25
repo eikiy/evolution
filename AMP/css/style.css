@@ -130,6 +130,10 @@ form.amp-form-submit-error fieldset, form.amp-form-submit-error .btn { display: 
 .follow_us ul.web li a { background-color: #20513a; }
 .follow_us ul.web li a:hover { background-color: #1f5d40; }
 
+/*carouselBox*/
+.carouselBox{ width: 100%; }
+.carouselBox .ContentsBox { width: 100%; max-width: 100%; }
+
 /*FooterBox*/
 .FooterBox { width: 100%; background-color: #fff; padding: 20px 0 55px 0; }
 .FooterBox ul.share-tools { padding: 15px 0; width: 100%; text-align: center; }
