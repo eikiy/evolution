@@ -48,7 +48,7 @@ a:hover { text-decoration: none; }
 .event-wrapper .top-sub-title{ max-width:600px; text-align: center; margin: 0 auto;}
 .event-wrapper .top-sub-title img{ width: 100%; display: inline-block; }
 
-.event-wrapper .main-title{ background-color: #5b5956;}
+.event-wrapper .main-title{ background-color: #494846;}
 .event-wrapper .main-title p.btn{ font-size: 18px; }
 .event-wrapper .main-title p.btn a{ color: #fff; background-color: #e91e63; transform: scale(1); border-color: #e91e63; line-height: initial; margin: 5px; box-shadow: 0px 5px 0 #444, 5px 5px 5px rgba(0,0,0,.2)}
 .event-wrapper .main-title p.btn a:hover{ transform: scale(1.05); background-color: #e91e63; }
