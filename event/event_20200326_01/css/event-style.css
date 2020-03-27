@@ -27,14 +27,15 @@ a:hover { text-decoration: none; }
 .event-wrapper .event-contents{ min-height:100vh; padding:80px 0 0px 0; overflow: hidden; text-align: center; background-repeat: no-repeat; background-size: cover; background-position: top center; background-attachment: fixed; background-image: url(../images/bg_main.jpg); }
 .event-wrapper .event-contents h2.top-title{ text-align: center; color: #fff; font-size:50px; padding:15px 0;}
 .event-wrapper .event-contents h2.top-title span{ font-weight: 800; font-family: 'Noto Sans TC', sans-serif;}
-.event-wrapper .event-contents h2.top-title span.highlight{ color: #fff5a6; }
+.event-wrapper .event-contents h2.top-title span.highlight{ color: #ffd24b; }
 
 .event-wrapper .event-contents p.top-text{ text-align: center; font-size:40px; line-height: 32px; padding: 0 20px; color: #fff; font-weight: 400;}
 .event-wrapper .event-contents p.sub-title{ text-align: center; font-size:20px; line-height: 32px; padding: 0 20px; color: #fff;}
+.event-wrapper .event-contents p.p-info{ text-align: center; font-size:17px; padding: 0 20px; color: #e8d8d8; padding: 10px 0;}
 
 .event-wrapper .event-contents a.pant-go{ text-align: center; font-size: 17px; padding:20px 0 10px 0; display: inline-block;}
 .event-wrapper .event-contents a.pant-go span.pink{display: inline-block; padding: 10px 30px; color: #fff; transform: scale(.95); background-color: #e91e63; border-radius: 40px; box-shadow: 0px 5px 0 #FFC107, 5px 5px 5px rgba(0,0,0,.3)}
-.event-wrapper .event-contents a.pant-go span.yello{ color: #ffeb3b;}
+.event-wrapper .event-contents span.yello{ color: #ffeb3b;}
 .event-wrapper .event-contents a.pant-go:hover span.pink{ transform: scale(1); }
 .event-wrapper .event-contents .main_banner{ max-width: 800px; height: 58vh; max-height: 550px; margin: 0 auto; background: url(../images/main_img.png) center bottom no-repeat; background-size: contain;}
 
