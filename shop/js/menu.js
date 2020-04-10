@@ -69,6 +69,13 @@ $(function() {
     });
 });
 
+// shop_style_one 新版購物車 header go_share
+$(function(){
+  $(".shop_style_one ul.header_tools li.go_share a").click(function(){
+    $(this).next("ul.share_web_list").stop(true, true).fadeToggle();
+    return false;
+  });
+});
 
 // PC side menu arr
 $(function(){
