@@ -387,7 +387,6 @@ div.parsley-error, a.parsley-error, input.parsley-error, textarea.parsley-error,
 .parsley-errors-list i { padding-right: 5px; }
 
 
-
 /*shop_style_one*/
 .shop_style_one .HeaderBox{ border:none; /*border-bottom: 1px solid #d6d6d6; */box-shadow: 0 0 10px rgba(0,0,0,.2); position: sticky; top: 0;}
 .shop_style_one .HeaderBox h1{ float: left; max-width: 200px; padding: 0; }
@@ -461,8 +460,8 @@ div.parsley-error, a.parsley-error, input.parsley-error, textarea.parsley-error,
 	.productBox .rightInfoBox .btnBox a.btn{max-width: 135px;}
 }
 @media (max-width:760px){
-	.HeaderBox{ position: fixed; top: 0; padding: 0; }
-	.HeaderBox ul.menu, .side_menu .left_side_contents{ display: none; }
+	.HeaderBox{ position: sticky; top: 0; padding: 0; }
+	.HeaderBox ul.menu, .side_menu .left_side_contents{ display: none;  }
 	.menu-btn, .shopping_contents ul.product_list li.free_user_ad_mob { display: block; }
 	.shopping_contents{ min-height: calc( 100vh - 168px); }
 	.shopping_contents ul.product_list li{ width:50%; padding: 18px 10px; }
