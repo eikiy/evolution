@@ -955,7 +955,7 @@
     display: inline-block;
 }
 .main_contents .slide_Photo ul.Photo_list li .list_nb {
-    z-index: 5;
+    z-index: 4;
     position: absolute;
     top: 0;
     left: 0;
