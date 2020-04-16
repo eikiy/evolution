@@ -419,9 +419,11 @@ div.parsley-error, a.parsley-error, input.parsley-error, textarea.parsley-error,
 .shop_style_one .HeaderBox ul.menu p a:hover, .shop_style_one .light-theme a:hover, .shop_style_one .light-theme li:not(.disabled):not(.active) span:hover, .shop_style_one .serviceBox ul li p a, .shop_style_one .confirm p a { color: #EF950D;}
 .shop_style_one .menu-btn{ left: 10px; top: 27px;}
 .shop_style_one .menu-btn span{ color: #4E4E4E;}
+.shop_style_one .productBox .rightInfoBox .styleBox a:hover{border-color: #555;}
+.shop_style_one .rightInfoBox .styleBox a.goods_none:hover{ border-color: #dadada;}
+.shop_style_one .right_product_info p.breadcrumb a:hover{ color: #555; }
 .shop_style_one .productBox .rightInfoBox .styleBox a.btn_selected{ color: #555; border-color: #555;}
-.shop_style_one .productBox .rightInfoBox .styleBox a:hover, .shop_style_one .rightInfoBox .styleBox a.goods_none:hover{ border-color: #dadada;}
-/*.shop_style_one .btn_default a,*/ .shop_style_one .top_title::after{background-color: #ffad39;}
+.shop_style_one .top_title::after{background-color: #ffad39;}
 .shop_style_one .order_editBox .purchaseDetails .total_amount{ background-color: #f1f1f1;}
 .shop_style_one .orderDoneBox ul.sendBox{ border-color: #d3d3d3; }
 .shop_style_one .btn_default a{background-color: #ffad39; }
