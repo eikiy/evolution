@@ -33,7 +33,9 @@
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
-
+    <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
+    <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+    <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
 
 </head>
 
@@ -116,6 +118,28 @@
                         </a>
                     </amp-carousel>
                 </div>
+            </div>
+        </section>
+        <!-- socialfeedBox -->
+        <!-- AMP 說明 facebook / instagram / twitter -->
+        <!-- https://amp.dev/documentation/components/amp-facebook/?format=websites -->
+        <!-- https://amp.dev/documentation/components/amp-instagram/?format=websites -->
+        <!-- https://amp.dev/documentation/components/amp-twitter/?format=websites -->
+        <section class="socialfeedBox section-base background-setting bg_translucent_w" style="background-image: url(images/action-carefree-cropland-1146242.jpg);">
+            <div class="ContentsBox">
+                <h3 class="main_title" style="font-weight: ; font-style: ; text-decoration: ; text-align: center; font-size: 2rem; color: #714343; ">社群動態貼文</h3>
+                <p class="sub_title" style="font-weight: ; font-style: ; text-decoration: ; text-align: center; font-size: 0.8125rem; color: ; ">Check out my latest updates!</p>
+                <ul class="posts">
+                    <li class="facebook">
+                        <amp-facebook width="500" height="661" layout="responsive" data-href="https://www.facebook.com/holkeego/photos/a.825244117649823/1562238473950380"></amp-facebook>
+                    </li>
+                    <li class="instagram">
+                        <amp-instagram  data-shortcode="fBwFP"  data-captioned  width="400"  height="400"  layout="responsive"></amp-instagram>
+                    </li>
+                    <li class="twitter">
+                        <amp-twitter  width="375" height="472" layout="responsive" data-tweetid="885634330868850689"></amp-twitter>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- mainBox -->

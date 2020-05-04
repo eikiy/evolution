@@ -144,6 +144,12 @@ form.amp-form-submit-error fieldset, form.amp-form-submit-error .btn { display: 
 .productsBox .slider-box .info .description p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .productsBox .slider-box .info a.btn { color: #555; padding: 3px 10px; display: inline-block; min-width: 65px; border-radius: 4px; border: 1px solid #555; }
 
+/*socialfeedBox*/
+.socialfeedBox ul.posts { width: 100%; padding: 40px 0; overflow: hidden; text-align: center; }
+.socialfeedBox ul.posts li{ width:calc(33% - 30px); display: inline-block; vertical-align: top; margin: 15px; }
+.socialfeedBox ul.posts li.facebook{ background-color: #fff; }
+.socialfeedBox ul.posts li.twitter{ margin-top:5px;}
+
 /*FooterBox*/
 .FooterBox { width: 100%; background-color: #fff; padding: 20px 0 55px 0; }
 .FooterBox ul.share-tools { padding: 15px 0; width: 100%; text-align: center; }
@@ -164,16 +170,20 @@ form.amp-form-submit-error fieldset, form.amp-form-submit-error .btn { display: 
 }
 @media (max-width: 1000px) {
     .HeaderBox .TopBox { display: none; }
+    .socialfeedBox ul.posts li{ width:50%; margin: 15px 0;}
 }
 @media (max-width: 900px) {
     .about_us_box .lBox, .about_us_box .rBox { width: 100%; padding: 0; }
     .map360_box .mapBox { height: 360px; }
     .contact_us .lBox, .contact_us .rBox { width: 100%; padding: 0; }
     .contact_us .mapBox { height: 300px; }
+    .socialfeedBox ul.posts li{width: 100%; max-width: 500px;}
 }
 @media (max-width: 600px) {
     .map360_box .mapBox { height: 300px; }
     .contact_us .mapBox { height: 240px; }
+    .socialfeedBox ul.posts{ padding: 0; }
+    .socialfeedBox ul.posts li{ width: 80%;}
 }
 @media (max-device-width: 1200px) {
     .video_box { min-height: initial; }
