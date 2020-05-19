@@ -514,7 +514,7 @@
 @media (min-width: 1000px) {
     .main_contents .sideMenu input:checked ~ ul {
         display: block;
-        height: 96px;
+        height: 48px;
     }
 
     .main_contents .sideMenu input:checked ~ ul.middle {
@@ -522,12 +522,12 @@
     }
 
     .main_contents .sideMenu input:checked ~ ul.large {
-        height: 256px;
+        height: 288px;
     }
 }
 
 .main_contents .sideMenu.open input:checked ~ ul {
-    height: 96px;
+    height: 48px;
 }
 
 .main_contents .sideMenu.open input:checked ~ ul.middle {
@@ -535,7 +535,7 @@
 }
 
 .main_contents .sideMenu.open input:checked ~ ul.large {
-    height: 256px;
+    height: 288px;
 }
 
 /*.main_contents a.open_switch{ position: fixed; font-size: 20px; z-index: 8; cursor: pointer; left: 35px; bottom: 8vh; width: 45px; height: 45px; line-height: 45px; border-radius: 50%; text-align: center; display: block; background-color: #27d0ca; color: #fff;}
@@ -1411,6 +1411,45 @@
 .main_contents .gmbBox .top_tools p.p_gray {
   color: #888888; }
 
+.main_contents ul.marketing_event{
+  width: calc(100% - 50px);
+  max-width: 710px;
+  padding-bottom: 30px;
+}
+.main_contents ul.marketing_event li{
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+  margin-bottom: 15px;
+}
+.main_contents ul.marketing_event li h4{
+  font-size: 20px;
+  display: block; 
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2; 
+  overflow:hidden;
+}
+.main_contents ul.marketing_event li p{
+  padding-top: 10px;
+  color: #888;
+  line-height: 20px;
+  display: block; 
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2; 
+  overflow:hidden;
+}
+.main_contents ul.marketing_event li .event_img{ 
+  width: 250px; 
+  float: left; 
+  height: 150px; 
+  display: block;
+}
+.main_contents ul.marketing_event li .event_info{ 
+  width:calc(100% - 250px); float: left; 
+  padding: 20px;
+}
 /*popup - style*/
 .white-popup {
     position: relative;
@@ -2010,6 +2049,20 @@
     margin-top: 15px;
     margin-left: -15px;
 }
+
+.promotionImage .imageUpload:before {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.f-upload-image.promotionImage .imageUpload:before {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: 60px;
+}
 /* END - Loading */
 
 /* Send SMS simulation screen */
@@ -2137,8 +2190,10 @@
   .main_contents ul.My_template {
     max-width: inherit; }
 
-  .main_contents .gmbBox {
-    max-width: inherit; }
+  .main_contents .gmbBox, .main_contents ul.marketing_event {
+    max-width: 760px; }
+  .main_contents .gmbBox .top_tools, .main_contents ul.marketing_event{
+    width: 100%; }
 }
 @media (max-width: 900px) {
   .main_contents .pageBox ul {
@@ -2332,6 +2387,17 @@
   }
   .main_contents .shop_carousel_contents .slide_Photo ul li .device p.note,
   .main_contents .shop_carousel_contents .slide_Photo ul .url_link input{ font-size: 12px; }
+  .main_contents ul.marketing_event li .event_img{
+    height: initial;
+    width: 100%;
+  }
+  .main_contents ul.marketing_event li .event_info{ 
+    width: 100%; 
+    padding: 5px 20px 10px 20px;
+  }
+  .main_contents ul.marketing_event li h4{ 
+    font-size: 16px; 
+  }
 }
 @media (max-width: 500px) {
     .setBox .fillinBox .multi-col {
