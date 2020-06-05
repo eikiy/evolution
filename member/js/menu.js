@@ -29,3 +29,11 @@
   }
   return false;
  });
+
+ $(function(){
+  $(".notification-list .the-msg .top-subject").click(function(){
+    $(this).next(".notification-information").stop(true, true).slideToggle();
+    $(this).toggleClass("arr_up arr_down")
+    return false;
+  });
+});
