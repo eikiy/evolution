@@ -345,7 +345,8 @@
 }
 
 @media (max-device-width:1200px) {
-	/*.plans-wrapper .shopform-contents{ background-attachment: inherit;}*/
+	.plans-wrapper .payment-done{background-position: center left;}
+	.plans-wrapper .shopform-contents{ background-attachment: inherit;}
 	.plans-wrapper .plans-contents{ background-attachment: inherit; background-position: left center; }
 	.plans-wrapper .support-add{ background-position: center center; }
 }
