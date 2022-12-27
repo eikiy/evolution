@@ -66,7 +66,7 @@ html, body{ height: 100%; }
 .PayerInfo ul.fillinBox li.centerBox{ text-align: center;}
 .PayerInfo ul.fillinBox li.centerBox .label_title{ padding-right: 0;}
 .PayerInfo input.tbox{ width: calc(100% - 60px); border: 0; font-size: 16px; line-height: 30px; background-color: #f2f0f0; padding:10px 15px 10px 45px; border-radius: 4px; }
-.PayerInfo select{ width:100%; border: 0; font-size: 16px; line-height: 30px; background-color: #f2f0f0; padding:10px 15px 10px 45px; border-radius: 4px;appearance:none; -moz-appearance:none; -webkit-appearance:none; }
+.PayerInfo select{ color: #888; width:100%; border: 0; font-size: 16px; line-height: 30px; background-color: #f2f0f0; padding:10px 15px 10px 45px; border-radius: 4px;appearance:none; -moz-appearance:none; -webkit-appearance:none; }
 .PayerInfo select::-ms-expand { display: none; }
 .PayerInfo select option.gray{ color: #888; }
 .PayerInfo .tl{ width:calc(50% - 5px); float: left;}
