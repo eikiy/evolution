@@ -96,7 +96,7 @@ html, body{ height: 100%; }
 .PayerInfo ul li.which input{ margin-right: 3px; }
 
 .PayerInfo .pos{ position: relative;}
-.pos::before {position: absolute; top: 10px; left: 3px; width: 40px; text-align: center; color: #6D6E71; line-height: 50px; display: block; font-family: "FontAwesome"; }
+.pos::before {position: absolute;left: 3px; width: 40px; text-align: center; color: #6D6E71; line-height: 50px; display: block; font-family: "FontAwesome"; }
 .icon_01::before { content: "\f007";}
 .icon_02::before { content: "\f2c2";}
 .icon_03::before { content: "\f1e4";}
@@ -106,7 +106,7 @@ html, body{ height: 100%; }
 .icon_07::before { content: "\f0d6";}
 .icon_08::before { content: "\f040";}
 .icon_09::before { content: "\f0e0";}
-.icon_07::after{ position:absolute ; pointer-events:none; top: 10px; content:"\f107"; text-align: center; right:3px; width:40px; line-height:50px; display: block; font-family: "FontAwesome"; }
+.icon_07::after{ position:absolute ; pointer-events:none; content:"\f107"; text-align: center; right:3px; width:40px; line-height:50px; display: block; font-family: "FontAwesome"; }
 
 p.for_note{position: absolute; bottom: -8px; left:50px; font-size: 13px;  color: #ff2121;}
 p.for_note i{padding-right: 3px;}
