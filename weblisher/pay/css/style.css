@@ -66,7 +66,7 @@ html, body{ height: 100%; }
 .PayerInfo ul.fillinBox li.centerBox{ text-align: center;}
 .PayerInfo ul.fillinBox li.centerBox .label_title{ padding-right: 0;}
 .PayerInfo input.tbox{ width: calc(100% - 60px); border: 0; font-size: 16px; display: block; line-height: 30px; background-color: #f2f0f0; padding:10px 15px 10px 45px; border-radius: 4px; }
-.PayerInfo select{ width:100%; border: 0; font-size: 16px; line-height: 30px; background-color: #f2f0f0; padding:10px 15px 10px 45px; border-radius: 4px; appearance:none; -moz-appearance:none; -webkit-appearance:none;}
+.PayerInfo select{ color: #888; width:100%; border: 0; font-size: 16px; line-height: 30px; background-color: #f2f0f0; padding:10px 15px 10px 45px; border-radius: 4px; appearance:none; -moz-appearance:none; -webkit-appearance:none;}
 .PayerInfo select::-ms-expand { display: none; }
 .PayerInfo select option.gray{ color: #888; }
 .PayerInfo .tl{ width:calc(50% - 5px); float: left;}
@@ -106,7 +106,7 @@ html, body{ height: 100%; }
 .icon_07::before { content: "\f0d6";}
 .icon_08::before { content: "\f040";}
 .icon_09::before { content: "\f0e0";}
-.icon_07::after{ position:absolute ; pointer-events:none; content:"\f107"; text-align: center; right:3px; width:40px; line-height:50px; display: block; font-family: "FontAwesome"; }
+.icon_07::after{ position:absolute ; top:10px; pointer-events:none; content:"\f107"; text-align: center; right:3px; width:40px; line-height:50px; display: block; font-family: "FontAwesome"; }
 
 p.for_note{position: absolute; bottom: -8px; left:50px; font-size: 13px;  color: #ff2121;}
 p.for_note i{padding-right: 3px;}
