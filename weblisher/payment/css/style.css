@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+blockquote, q { quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none;}
+input, textarea { margin:0; padding:0;}
+* {-webkit-text-size-adjust:none;}
+a{text-decoration:none;}
+fieldset, img { border:0;}
+ol, ul { list-style:none;}
+abbr, acronym { border:0;}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+* html .clearfix {height: 1%;}
+*:first-child + html .clearfix { min-height: 1%;}
+body, h1, h2, h3, h4, h5, h6, p { font-family: "\5FAE\8F6F\96C5\9ED1",STXihei,sans-serif; color: #333; font-weight: normal;}
+a{  text-decoration:none; outline: none;  -o-transition: color .20s linear, background-color .20s linear, border-color .20s linear; -webkit-transition: color .20s linear, background-color .20s linear, border-color .20s linear; -moz-transition: color .20s linear, background-color .20s linear, border-color .20s linear; transition: color .20s linear, background-color .20s linear, border-color .20s linear; }
+a:hover{ text-decoration:none;}
+select, input, textarea, button  {font-family: "\5FAE\8F6F\96C5\9ED1",STXihei,sans-serif;}
+*:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; }
+html, body{ height: 100%; }
+
+
+.ContentsBox{ width: 100%; max-width: 1260px; margin: 0 auto;}
+.weblisher_swipeBox{ width: 100%; }
+.weblisher_swipeBox h3.title{ width: 100%; font-size: 20px; position: relative; padding: 15px 0 25px 0;}
+.weblisher_swipeBox h3.title::after{ content: ""; position: absolute; left: 0%; bottom: 0; width: 92px; height: 4px; display: block; background-color:#bb8c53;}
+
+.payment_status .ContentsBox { height: 100%; min-height:calc(100vh - 257px); display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center}
+.payment_status h3.title{ font-size: 26px; text-align: center; position: relative; padding-top: 60px; margin-bottom: 30px; }
+.payment_status h3.title::after{ left: 50%; margin-left: -46px; }
+.payment_status h3.title::before{ content: "\f058"; position: absolute; width: 100%; font-size: 50px; color: #20513a; top: 0; left: 0; font-family: "FontAwesome";  text-align: center; }
+.payment_status p{ text-align: center; padding-bottom: 20px; }
+.payment_status p span{ color: #20513a; font-weight: bold; }
+.payment_status a.btn{ width: 100%; text-align: center; padding: 40px 0; font-size: 18px;margin-top: 15px;  width: 100%; cursor: pointer; max-width: 280px; background-color: #20513a; color: #fff; padding: 15px 0px; border-radius: 4px; display: inline-block; box-shadow: 0 4px 0px #17422e;}
+.payment_status a.btn:hover{background-color: #236b49;}
+.payment_status h3.nono::before{ content: "\f071"; color: #ffa23f; }
+
+.weblisher_swipeHeader, .weblisher_swipeFooter{ width: 100%; }
+.weblisher_swipeHeader .logoBox{ width: 100%; padding: 20px 0; }
+.weblisher_swipeHeader .logoBox h1 {text-indent: -9999px;}
+.weblisher_swipeHeader .logoBox h1 a{ width: 248px; height: 42px; display: block; background: url(../images/weblisher_logo.png) center center no-repeat; background-size: contain; }
+.weblisher_swipeHeader .title{ width: 100%; background-color: #20513a; padding: 20px 0;}
+.weblisher_swipeHeader .title h2{ color: #fff; font-size: 30px; font-weight: 300; }
+
+.weblisher_swipeFooter{padding:30px 0; background-color: #20513a;}
+.weblisher_swipeFooter p{ display: inline-block; float: left; width: calc(100% - 100px); color: #fff; line-height: 35px; font-size: 14px; }
+.weblisher_swipeFooter .social-icons{ float: right; width: 88px; text-align: right; }
+.weblisher_swipeFooter .social-icons li{display: inline-block; margin: 0 2px;}
+.weblisher_swipeFooter .social-icons li a{ color: #20513a; width: 35px; height: 35px; font-size: 16px; line-height: 35px; border-radius: 50%; text-align: center; background-color: #fff; display: inline-block;}
+
+.PayerInfo{width: 100%; background-color: #fff; padding: 40px 0;}
+
+.PayerInfo .btn{ width: 100%; text-align: center; padding: 40px 0;}
+.PayerInfo button { font-size: 18px;  width: 100%; cursor: pointer; max-width: 280px; margin: 0 auto; background-color: #20513a; color: #fff; padding: 15px 0px; border-radius: 4px; display: inline-block; box-shadow: 0 4px 0px #17422e;}
+.PayerInfo button:hover{background-color: #236b49;}
+.PayerInfo form{ width: 100%; margin: 0 auto;}
+
+
+.PayerInfo ul.fillinBox{ float: left; width:calc(50% - 20px); padding: 40px 0; }
+.PayerInfo ul.fillinBox label{ font-size: 16px; padding-right: 5px; }
+.PayerInfo ul li{ padding: 10px 0;}
+.PayerInfo ul.fillinBox .label_title{ min-width: 120px; display: inline-block; text-align: right; padding-right: 10px;}
+.PayerInfo ul.fillinBox li.centerBox{ text-align: center;}
+.PayerInfo ul.fillinBox li.centerBox .label_title{ padding-right: 0;}
+.PayerInfo input.tbox{ width: calc(100% - 60px); border: 0; font-size: 16px; line-height: 30px; background-color: #f2f0f0; padding:10px 15px 10px 45px; border-radius: 4px; }
+.PayerInfo select{ width:100%; border: 0; font-size: 16px; line-height: 30px; background-color: #f2f0f0; padding:14px 15px 14px 45px; border-radius: 4px; }
+.PayerInfo select option.gray{ color: #888; }
+.PayerInfo .tl{ width:calc(50% - 5px); float: left;}
+.PayerInfo .tr{ width:calc(50% - 5px); float: right;}
+
+.PayerInfo textarea{ width: calc(100% - 60px); border: 0; font-size: 16px; line-height: 30px; background-color: #f2f0f0; padding:10px 15px 10px 45px; border-radius: 4px; }
+
+.PayerInfo ::-webkit-input-placeholder { /* WebKit browsers */ color: #888;}
+.PayerInfo :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #888;}
+.PayerInfo ::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #888;}
+.PayerInfo :-ms-input-placeholder { /* Internet Explorer 10+ */  color: #888;}
+
+.PayerInfo input.tbox[type=text]{ -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out;  outline: none;}
+.PayerInfo input.tbox[type=text]:focus { background-color: #faf4ed;}
+
+.PayerInfo .note{ font-size: 15px; line-height: 24px; color: #555;}
+.PayerInfo .note span{ color: #bb8c53; }
+.PayerInfo .note a{ color: #bb8c53; }
+.PayerInfo .note a:hover{ text-decoration: underline; }
+.PayerInfo .the_checkbox{ padding-right: 5px;}
+
+.invoice_info{float: right; width: calc(50% - 20px); padding: 40px 0;}
+.invoice_info p.red_note{ color: #f42c37; padding: 10px 0; }
+
+.PayerInfo ul.rightBox{ background-color: #f3f2f1; width: calc(100% - 50px); padding: 30px 25px;}
+.PayerInfo ul.rightBox input.tbox{ background-color: #fff; }
+.PayerInfo ul li.which input{ margin-right: 3px; }
+
+.PayerInfo .pos{ position: relative;}
+.pos::before {position: absolute; left: 3px; width: 40px; text-align: center; color: #6D6E71; line-height: 50px; display: block; font-family: "FontAwesome"; }
+.icon_01::before { content: "\f007";}
+.icon_02::before { content: "\f2c2";}
+.icon_03::before { content: "\f1e4";}
+.icon_04::before { content: "\f095";}
+.icon_05::before { content: "\f041";}
+.icon_06::before { content: "\f07a";}
+.icon_07::before { content: "\f0d6";}
+.icon_08::before { content: "\f040";}
+.icon_09::before { content: "\f0e0";}
+
+p.for_note{position: absolute; bottom: -8px; left:50px; font-size: 13px;  color: #ff2121;}
+p.for_note i{padding-right: 3px;}
+
+@media (max-width:1260px){
+  .ContentsBox{max-width: 90%;}
+}
+@media (max-width:1024px){
+	.PayerInfo ul.fillinBox, .invoice_info{width: 100%;}
+}
+@media (max-width:750px){
+	.weblisher_swipeFooter p{text-align: center; width: 100%; float: none; line-height: 26px;}
+	.weblisher_swipeFooter .social-icons{ margin: 0 auto; float: none; text-align: center; padding-top: 15px;}
+}
+
+@media (max-width:700px){
+  .weblisher_swipeBox h3.title{ font-size: 24px; }
+}
+
+@media (max-width:600px){
+  .weblisher_swipeBox h3.title{ font-size: 22px; }
+  .PayerInfo input.tbox{ font-size: 15px; }
+  .PayerInfo ul.fillinBox label{font-size: 15px; }
+  .PayerInfo ul.fillinBox .label_title{min-width: 106px;}
+  .PayerInfo .note{font-size: 14px;}
+}
+
+@media (max-device-width:800px) {
+	.PayerInfo{ padding: 30px 0; }
+	.PayerInfo ul.fillinBox{padding: 20px 0;}
+	.weblisher_swipeHeader .title h2{font-size: 26px; text-align: center;}
+	.weblisher_swipeHeader .logoBox h1 a{width: 200px; margin: 0 auto;}
+	.invoice_info{padding: 0px;}
+}
+@media (max-device-width:540px) {
+	.PayerInfo .tl{ width: 100%; margin-bottom: 20px; }
+	.PayerInfo .tr{ width: 100% ;}
+	.PayerInfo ul.rightBox .tl{margin-bottom:10px; }
+}
+
