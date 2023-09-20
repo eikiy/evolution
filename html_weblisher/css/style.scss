@@ -1860,11 +1860,12 @@ a.go_top {
     background-position:  center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 560px;
+    // min-height: 560px;
   }
   .branding-info{
     flex: 60%;
     padding:40px 20px 30px 20px;
+    background-color: #FCFBF9;
     // 1
     .main-title {
       p {
@@ -1931,10 +1932,12 @@ a.go_top {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       padding-bottom: 10px;
       li{
         padding: 10px;
         flex: 33%;
+        max-width: 33%;
         text-align: center;
         .img-box{
           width: 100%;
@@ -1960,6 +1963,24 @@ a.go_top {
   .bg-branding-01{
     background-image: url(../images/popup/p_01.png);
   }
+  .bg-branding-02{
+    background-image: url(../images/popup/p_02.png);
+  }
+  .bg-branding-03{
+    background-image: url(../images/popup/p_03.png);
+  }
+  .bg-branding-04{
+    background-image: url(../images/popup/p_04.png);
+  }
+  .bg-branding-05{
+    background-image: url(../images/popup/p_05.png);
+  }
+  .bg-branding-06{
+    background-image: url(../images/popup/p_06.png);
+  }
+  .bg-branding-07{
+    background-image: url(../images/popup/p_07.png);
+  }
   @media (max-width: 800px) {
     .cover-branding{
       flex: 100%;
@@ -1971,6 +1992,24 @@ a.go_top {
     }
     .bg-branding-01{
       background-image: url(../images/popup/p_01_s.png);
+    }
+    .bg-branding-02{
+      background-image: url(../images/popup/p_02_s.png);
+    }
+    .bg-branding-03{
+      background-image: url(../images/popup/p_03_s.png);
+    }
+    .bg-branding-04{
+      background-image: url(../images/popup/p_04_s.png);
+    }
+    .bg-branding-05{
+      background-image: url(../images/popup/p_05_s.png);
+    }
+    .bg-branding-06{
+      background-image: url(../images/popup/p_06_s.png);
+    }
+    .bg-branding-07{
+      background-image: url(../images/popup/p_07_s.png);
     }
   }
   @media (max-width: 599px) {
@@ -1984,7 +2023,7 @@ a.go_top {
       ul.advantage-list {
         li {
           flex: 50%;
-  
+          max-width: initial;
           p {
             padding-top: 10px;
             line-height: 1.25;

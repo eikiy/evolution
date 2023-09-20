@@ -2125,7 +2125,6 @@ a.go_top {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 560px;
 }
 
 .popup-branding-wrap .branding-info {
@@ -2133,6 +2132,7 @@ a.go_top {
       -ms-flex: 60%;
           flex: 60%;
   padding: 40px 20px 30px 20px;
+  background-color: #FCFBF9;
 }
 
 .popup-branding-wrap .branding-info .main-title p {
@@ -2202,6 +2202,9 @@ a.go_top {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 10px;
 }
 
@@ -2210,6 +2213,7 @@ a.go_top {
   -webkit-box-flex: 33%;
       -ms-flex: 33%;
           flex: 33%;
+  max-width: 33%;
   text-align: center;
 }
 
@@ -2238,6 +2242,30 @@ a.go_top {
   background-image: url(../images/popup/p_01.png);
 }
 
+.popup-branding-wrap .bg-branding-02 {
+  background-image: url(../images/popup/p_02.png);
+}
+
+.popup-branding-wrap .bg-branding-03 {
+  background-image: url(../images/popup/p_03.png);
+}
+
+.popup-branding-wrap .bg-branding-04 {
+  background-image: url(../images/popup/p_04.png);
+}
+
+.popup-branding-wrap .bg-branding-05 {
+  background-image: url(../images/popup/p_05.png);
+}
+
+.popup-branding-wrap .bg-branding-06 {
+  background-image: url(../images/popup/p_06.png);
+}
+
+.popup-branding-wrap .bg-branding-07 {
+  background-image: url(../images/popup/p_07.png);
+}
+
 @media (max-width: 800px) {
   .popup-branding-wrap .cover-branding {
     -webkit-box-flex: 100%;
@@ -2254,6 +2282,24 @@ a.go_top {
   .popup-branding-wrap .bg-branding-01 {
     background-image: url(../images/popup/p_01_s.png);
   }
+  .popup-branding-wrap .bg-branding-02 {
+    background-image: url(../images/popup/p_02_s.png);
+  }
+  .popup-branding-wrap .bg-branding-03 {
+    background-image: url(../images/popup/p_03_s.png);
+  }
+  .popup-branding-wrap .bg-branding-04 {
+    background-image: url(../images/popup/p_04_s.png);
+  }
+  .popup-branding-wrap .bg-branding-05 {
+    background-image: url(../images/popup/p_05_s.png);
+  }
+  .popup-branding-wrap .bg-branding-06 {
+    background-image: url(../images/popup/p_06_s.png);
+  }
+  .popup-branding-wrap .bg-branding-07 {
+    background-image: url(../images/popup/p_07_s.png);
+  }
 }
 
 @media (max-width: 599px) {
@@ -2267,6 +2313,7 @@ a.go_top {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
+    max-width: initial;
   }
   .popup-branding-wrap .branding-info ul.advantage-list li p {
     padding-top: 10px;
