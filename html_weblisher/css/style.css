@@ -697,6 +697,7 @@ a.go_top {
   .main-wrapper .video-wrap p.scroll {
     bottom: 20px;
     font-size: 12px;
+    left: calc(50% - 20px);
   }
   .main-wrapper .video-wrap p.scroll a {
     width: 40px;
@@ -1659,7 +1660,7 @@ a.go_top {
 }
 
 .main-wrapper .contact-form {
-  background: url(../images/bg_contact.png) center center no-repeat;
+  background: url(../images/bg_contact.jpg) center center no-repeat;
   background-size: cover;
   padding: 40px 0;
 }
@@ -2232,6 +2233,29 @@ a.go_top {
   font-size: 13px;
   line-height: 1.5;
   font-weight: 500;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-branding-wrap .branding-info ul.box-w-2 {
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+.popup-branding-wrap .branding-info ul.box-w-2 li {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
 }
 
 .popup-branding-wrap .branding-info .btn {

@@ -679,6 +679,7 @@ a.go_top {
       p.scroll {
         bottom: 20px;
         font-size: 12px;
+        left: calc(50% - 20px);
         a{
           width: 40px;
           height: 40px;
@@ -1484,7 +1485,7 @@ a.go_top {
      }
   }
   .contact-form{
-    background: url(../images/bg_contact.png) center center no-repeat;
+    background: url(../images/bg_contact.jpg) center center no-repeat;
     background-size: cover;
     padding: 40px 0;
     .box-w{
@@ -1953,7 +1954,20 @@ a.go_top {
           font-size: 13px;
           line-height: 1.5;
           font-weight: 500;
+          min-height: 50px;
+          display: flex;
+          align-items: center;
+          vertical-align: middle;
+          justify-content: center;
         }
+      }
+    }
+    ul.box-w-2{
+      max-width: 370px;
+      margin: 0 auto;
+      li{
+        flex: 50%;
+        max-width: 50%;
       }
     }
     .btn{
