@@ -1106,6 +1106,12 @@ a.go_top {
     width: 100%;
     padding: 30px 0;
   }
+  .main-wrapper .bg-easy .box-w .text-center span.br {
+    display: block;
+  }
+  .main-wrapper .bg-easy .box-w span.none {
+    display: none;
+  }
 }
 
 .main-wrapper .in-b-01 {
@@ -1604,6 +1610,7 @@ a.go_top {
 }
 
 .main-wrapper .bg-solutions .puzzle_r .img-box {
+  padding-top: 0;
   padding-bottom: 20px;
 }
 
@@ -1621,7 +1628,6 @@ a.go_top {
 }
 
 .main-wrapper .bg-solutions .puzzle_l .img-box {
-  padding-top: 0;
   padding-bottom: 20px;
 }
 
@@ -1635,7 +1641,7 @@ a.go_top {
     height: 50px;
     top: initial;
     right: 12%;
-    bottom: -13px;
+    bottom: -18px;
   }
   .main-wrapper .bg-solutions .puzzle_l {
     margin-top: 20px;
@@ -1651,6 +1657,8 @@ a.go_top {
   }
   .main-wrapper .bg-solutions .box-w .text-contents p {
     padding-bottom: 20px;
+    font-size: 16px;
+    padding: 0 10px;
   }
   .main-wrapper .bg-solutions .box-w .btn p {
     padding-bottom: 0;
@@ -1981,6 +1989,14 @@ a.go_top {
   color: #6E6E6E;
 }
 
+.footer-wrapper .company-info .copyrights a {
+  color: #6E6E6E;
+}
+
+.footer-wrapper .company-info .copyrights a:hover {
+  color: #15AEA2;
+}
+
 .footer-wrapper ul.contact-list {
   width: 100%;
 }
@@ -2039,15 +2055,20 @@ a.go_top {
 
 .footer-wrapper .social-info ul.social-link li a {
   width: 30px;
+  height: 30px;
   display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
 }
 
-.footer-wrapper .social-info ul.social-link li a img {
-  width: 100%;
+.footer-wrapper .social-info ul.social-link li a.fb {
+  background-image: url(../images/icon_facebook.svg);
 }
 
-.footer-wrapper .social-info ul.social-link li a:hover {
-  color: #11948A;
+.footer-wrapper .social-info ul.social-link li a.fb:hover {
+  background-image: url(../images/icon_facebook_green.svg);
 }
 
 @media (max-width: 700px) {

@@ -1011,6 +1011,12 @@ a.go_top {
       .box-w{
         width: 100%;
         padding: 30px 0;
+        .text-center span.br{
+          display: block;
+        }
+        span.none{
+          display: none;
+        }
       }
     }
   }
@@ -1433,6 +1439,7 @@ a.go_top {
         background-size: contain;
       }
       .img-box{
+        padding-top: 0;
         padding-bottom: 20px;
       }
     }
@@ -1447,7 +1454,6 @@ a.go_top {
         background-size: contain;
       }
       .img-box{
-        padding-top: 0;
         padding-bottom: 20px;
       }
     }
@@ -1460,7 +1466,7 @@ a.go_top {
         height: 50px;
         top: initial;
         right: 12%;
-        bottom: -13px;
+        bottom: -18px;
       }
       .puzzle_l{
         margin-top: 20px;
@@ -1475,6 +1481,8 @@ a.go_top {
         padding: 25px 0 0 0;
         .text-contents p{
           padding-bottom: 20px;
+          font-size: 16px;
+          padding: 0 10px;
         }
         .btn p{
           padding-bottom: 0;
@@ -1738,6 +1746,12 @@ a.go_top {
     .copyrights{
       font-size: 12px;
       color: #6E6E6E;
+      a{
+        color: #6E6E6E;
+        &:hover{
+          color: #15AEA2;
+        }
+      }
     }
   }
   ul.contact-list{
@@ -1782,13 +1796,24 @@ a.go_top {
         padding: 0 18px 10px 0;
         a{
           width: 30px;
+          height: 30px;
           display: block;
-          img{
-            width: 100%;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          text-indent: -9999px;
+          &.fb{
+            background-image: url(../images/icon_facebook.svg);
+            &:hover{
+              background-image: url(../images/icon_facebook_green.svg);
+            }
           }
-          &:hover{
-            color:#11948A;
-          }
+          // img{
+          //   width: 100%;
+          // }
+          // &:hover{
+          //   color:#11948A;
+          // }
         }
       }
     }
