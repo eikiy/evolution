@@ -651,6 +651,7 @@ a.go_top {
       display: block;
       z-index: 4;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+      pointer-events: none;
     }
     p.scroll{
       position: absolute;
