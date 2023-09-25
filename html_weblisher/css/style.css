@@ -674,6 +674,10 @@ a.go_top {
   bottom: 30px;
   z-index: 5;
   cursor: pointer;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .main-wrapper .video-wrap p.scroll span {
@@ -692,6 +696,10 @@ a.go_top {
   margin: 0 auto;
   background: url(../images/scroll-arr.svg) center center no-repeat;
   background-size: 36%;
+}
+
+.main-wrapper .video-wrap p.scroll:hover {
+  bottom: 40px;
 }
 
 @media (max-width: 599px) {
@@ -1618,6 +1626,15 @@ a.go_top {
 
 .main-wrapper .bg-solutions .block-box .abox {
   padding: 40px;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.main-wrapper .bg-solutions .block-box .abox:hover {
+  -webkit-transform: scale(0.95, 0.95);
+          transform: scale(0.95, 0.95);
 }
 
 .main-wrapper .bg-solutions .box-w {
@@ -1960,6 +1977,50 @@ a.go_top {
   }
   .main-wrapper .company-map .company-info .text-info .btn-navigation p a {
     margin: 0 auto;
+  }
+}
+
+.main-wrapper .privacy-wrap .main-title h4 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.main-wrapper .privacy-wrap .main-title h4 span {
+  color: #11948A;
+}
+
+.main-wrapper .privacy-wrap .text-contents {
+  padding: 20px 0;
+}
+
+.main-wrapper .privacy-wrap .text-contents h4 {
+  font-size: 16px;
+  color: #11948A;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.main-wrapper .privacy-wrap .text-contents p {
+  font-size: 15px;
+}
+
+.main-wrapper .privacy-wrap ul.style-disc {
+  color: #333;
+  font-size: 15px;
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+@media (max-width: 700px) {
+  .main-wrapper .privacy-wrap .main-title h4 {
+    font-size: 15px;
+  }
+  .main-wrapper .privacy-wrap .text-contents h4 {
+    font-size: 14px;
+  }
+  .main-wrapper .privacy-wrap .text-contents p {
+    font-size: 13px;
   }
 }
 
