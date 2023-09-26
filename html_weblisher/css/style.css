@@ -193,6 +193,11 @@ a:hover {
   box-sizing: border-box;
 }
 
+.an-repeat {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .btn {
   padding: 15px 10px;
   text-align: center;
@@ -755,21 +760,17 @@ a.go_top {
 }
 
 .main-wrapper .bg-forecasting {
-  background: url(../images/bg_forecasting.png) center center no-repeat #d6ddd5;
+  background: url(../images/bg_forecasting_0.png) center center no-repeat #d6ddd5;
   background-attachment: fixed;
   position: relative;
 }
 
 .main-wrapper .bg-forecasting .block-box {
   height: 100%;
-  min-height: 935px;
   position: relative;
 }
 
 .main-wrapper .bg-forecasting .block-box .atag {
-  position: absolute;
-  left: 5%;
-  top: 15%;
   font-size: 50px;
   text-transform: uppercase;
   color: #333;
@@ -777,14 +778,45 @@ a.go_top {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
-.main-wrapper .bg-forecasting .main-title {
+.main-wrapper .bg-forecasting .top-text {
   position: absolute;
-  right: 10%;
-  top: 15%;
+  left: 3%;
+  top: 50px;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main-wrapper .bg-forecasting .img-box {
+  padding: 40px 0;
+}
+
+.main-wrapper .bg-forecasting .main-title {
+  margin-left: auto;
 }
 
 .main-wrapper .bg-forecasting .main-title h3 {
   padding: 10px 0;
+}
+
+.main-wrapper .bg-forecasting .main-title h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.main-wrapper .bg-forecasting .main-title .img-box {
+  padding: 0;
 }
 
 .main-wrapper .bg-forecasting .style-row {
@@ -888,24 +920,45 @@ a.go_top {
   }
 }
 
+@media (max-width: 1050px) {
+  .main-wrapper .bg-forecasting .top-text {
+    position: initial;
+  }
+}
+
 @media (max-width: 800px) {
-  .main-wrapper .bg-forecasting {
-    background-image: url(../images/bg_forecasting_s.jpg);
-    background-attachment: inherit;
-    background-size: cover;
+  .main-wrapper .bg-forecasting .top-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-wrapper .bg-forecasting .img-box {
+    padding: 20px 0;
+  }
+  .main-wrapper .bg-forecasting .column {
+    padding: 0 0 150px 0;
+  }
+  .main-wrapper .bg-forecasting .style-row {
+    position: initial;
   }
   .main-wrapper .bg-forecasting .block-box {
-    padding-top: 30px;
+    padding: 30px 0 0 0;
   }
   .main-wrapper .bg-forecasting .block-box .atag {
     text-align: center;
-    position: initial;
     font-size: 20px;
     padding-bottom: 20px;
   }
   .main-wrapper .bg-forecasting .block-box .main-title {
-    position: initial;
     text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-wrapper .bg-forecasting .main-title h4 {
+    font-size: 14px;
+    line-height: 1.5;
   }
 }
 

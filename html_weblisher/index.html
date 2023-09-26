@@ -28,21 +28,26 @@
         <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
         <link rel="shortcut icon" href="images/icons/favicon.ico" />
-        
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/wow.js"></script>
-        <!-- <script src="js/script.js"></script> -->
+        <script src="js/script.js"></script>
+
+        <!-- animate -->
+        <script src="js/wow.js"></script>
+        <script>
+            $(function () {
+                new WOW().init();
+            });
+        </script>
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="css/swiper.css">
 
-        <link rel="stylesheet"
-            href='https://fonts.googleapis.com/css?family=Raleway%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CPT+Serif%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CPlayfair+Display+SC%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CMontserrat%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%26subset%3Dlatin%2Ccyrillic%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Clatin-ext&#038;ver=1.0'
-            type='text/css' media='all' />
-        <link rel='stylesheet' id='penci-font-notosanstc-css'
-            href='https://fonts.googleapis.com/earlyaccess/notosanstc.css?ver=1.0' type='text/css' media='all' />
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Raleway%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CPT+Serif%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CPlayfair+Display+SC%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CMontserrat%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%26subset%3Dlatin%2Ccyrillic%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Clatin-ext&#038;ver=1.0' type='text/css' media='all' />
+        <link rel='stylesheet' id='penci-font-notosanstc-css' href='https://fonts.googleapis.com/earlyaccess/notosanstc.css?ver=1.0' type='text/css' media='all' />
 
 
         <!-- bg video -->
@@ -140,7 +145,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="language">
+                    <!-- <div class="language">
                         <a class="choosing">
                             <i class="fas fa-globe"></i>
                             <span>TW</span> 
@@ -162,7 +167,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </header>
 
@@ -172,24 +177,13 @@
                 <section class="section-wrap video-wrap">
                     <div class="bg-video-wrap">
                         <video loop muted autoplay="true" poster="#" class="fullscreen-bg__video" controls="controls" controlsList="nodownload noplaybackrate" disablePictureInPicture="true" preload="auto" playsinline>
-                            <source src="assets/video_0920.mp4" type="video/mp4">
-                            <!-- add .ogv and .webm to cover all compatible devices  -->
+                            <source src="assets/video_0926.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <p class="scroll">
+                    <p class="scroll wow bounce an-repeat" data-wow-duration="3s">
                         <span>SCROLL</span>
                         <a class="btn-scroll" href="#"></a>
                     </p>
-                    <!-- <div class="video-back the_videoBox">
-                        <video autoplay muted loop class="vidbacking">
-                            <source src="assets/video_0911.mp4" type="video/mp4">
-                        </video>
-                    </div> -->
-                    <!-- <div class="block-box">
-                        <p>
-                            <a class="btn-scroll" href="#">SCROLL</a>
-                        </p>
-                    </div> -->
                 </section>
 
                 <!-- 核心價值 -->
@@ -221,14 +215,19 @@
                 <!-- 架站首選 holkee -->
                 <section class="section-wrap bg-forecasting">
                     <div class="block-box">
-                        <p class="atag">Forecasting</p>
-                        <div class="main-title">
-                            <div class="img-box">
-                                <img src="images/holkee_logo.svg" alt="holkee 快速建站" style="max-width: 140px;">
+                        <div class="top-text">
+                            <p class="atag">Forecasting</p>
+                            <div class="main-title">
+                                <div class="img-box">
+                                    <img src="images/holkee_logo.svg" alt="holkee 快速建站" style="max-width: 140px;">
+                                </div>
+                                <h3>全新的行銷隨選隨用</h3>
+                                <h4>3 分鐘架站、在網做生意<br>
+                                品牌形象網站產出比你想得還要快速簡單</h4>
                             </div>
-                            <h3>全新的行銷隨選隨用</h3>
-                            <h4>3 分鐘架站、在網做生意<br>
-                            品牌形象網站產出比你想得還要快速簡單</h4>
+                        </div>
+                        <div class="img-box">
+                           <img src="images/img_forecasting.png"> 
                         </div>
                         <div class="text-contents style-row">
                             <h3>架站首選：holkee</h3>
@@ -895,7 +894,7 @@
         <section id="popup-video-01" class="default-popup mfp-hide">
             <div class="popup-video-wrap">
                 <div class="video-box">
-                    <iframe src="https://www.youtube-nocookie.com/embed/kyjaEGpGXck?si=ZCF_SiKYsb3gK9wC&amp;controls=0&autoplay=1"
+                    <iframe src="https://www.youtube-nocookie.com/embed/kyjaEGpGXck?si=ZCF_SiKYsb3gK9wC&amp;controls=0"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -912,7 +911,7 @@
         <section id="popup-video-02" class="default-popup mfp-hide">
             <div class="popup-video-wrap">
                 <div class="video-box">
-                    <iframe src="https://www.youtube.com/embed/vjVh86rchDw?si=bm4hsfrRmx2hisa4&amp;controls=0&autoplay=1" title="YouTube video player" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/vjVh86rchDw?si=bm4hsfrRmx2hisa4&amp;controls=0" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
@@ -928,7 +927,7 @@
         <section id="popup-video-03" class="default-popup mfp-hide">
             <div class="popup-video-wrap">
                 <div class="video-box">
-                    <iframe src="https://www.youtube.com/embed/AVtzM901fb8?si=SlgLzHVZ4pc2DKqf&amp;controls=0&autoplay=1"
+                    <iframe src="https://www.youtube.com/embed/AVtzM901fb8?si=SlgLzHVZ4pc2DKqf&amp;controls=0"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -945,7 +944,7 @@
         <section id="popup-video-04" class="default-popup mfp-hide">
             <div class="popup-video-wrap">
                 <div class="video-box">
-                    <iframe src="https://www.youtube.com/embed/88SybKQ5pb4?si=1s4tJ0Z2iVScQCXf&amp;controls=0&autoplay=1"
+                    <iframe src="https://www.youtube.com/embed/88SybKQ5pb4?si=1s4tJ0Z2iVScQCXf&amp;controls=0"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>

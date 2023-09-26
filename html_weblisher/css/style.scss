@@ -180,27 +180,9 @@ a:hover {
   box-sizing: border-box;
 }
 
-// html,
-// body {
-//   position: relative;
-//   height: 100%;
-// }
-
-// swiper-slide {
-//   text-align: center;
-//   font-size: 18px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// swiper-slide img {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
-
+ .an-repeat {
+   animation-iteration-count: infinite;
+ }
 .btn{
   padding:15px 10px;
   text-align: center;
@@ -750,17 +732,13 @@ a.go_top {
   }
 
   .bg-forecasting {
-    background: url(../images/bg_forecasting.png) center center no-repeat #d6ddd5;
+    background: url(../images/bg_forecasting_0.png) center center no-repeat #d6ddd5;
     background-attachment: fixed;
     position: relative;
     .block-box{
       height: 100%;
-      min-height: 935px;
       position: relative;
       .atag{
-        position: absolute;
-        left: 5%;
-        top: 15%;
         font-size: 50px;
         text-transform: uppercase;
         color: #333;
@@ -768,12 +746,33 @@ a.go_top {
         font-family: 'Noto Sans TC', sans-serif;
       }
     }
-    .main-title{
+    .top-text{
       position: absolute;
-      right: 10%;
-      top:15%;
+      left: 3%;
+      top: 50px;
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+    }
+    .img-box{
+      padding: 40px 0;
+    }
+    .main-title{
+      margin-left: auto;
       h3{
         padding: 10px 0;
+      }
+      h4{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.8;
+      }
+      .img-box{
+        padding: 0;
       }
     }
     .style-row{
@@ -851,22 +850,43 @@ a.go_top {
         }
        }
     }
-
+    @media (max-width: 1050px){
+      .top-text {
+        position: initial;
+      }
+    }
     @media (max-width: 800px){
-      background-image: url(../images/bg_forecasting_s.jpg);
-      background-attachment: inherit;
-      background-size: cover;
+      .top-text {
+        flex-direction:column;
+      }
+      .img-box{
+        padding: 20px 0;
+      }
+      .column{
+        padding: 0 0 150px 0;
+      }
+      .style-row{
+        position: initial;
+      }
       .block-box{
-        padding-top: 30px;
+        padding: 30px 0 0 0;
         .atag{
           text-align: center;
-          position: initial;
+          // position: initial;
           font-size: 20px;
           padding-bottom: 20px;
         }
         .main-title{
-          position: initial;
+          // position: initial;
           text-align: center;
+        }
+      }
+    }
+    @media (max-width: 800px){
+      .main-title{
+        h4{
+          font-size: 14px;
+          line-height: 1.5;
         }
       }
     }
