@@ -1055,8 +1055,20 @@ a.go_top {
     }
     @media (max-width: 760px){
       .block-box {
+        position: relative;
         min-height: initial;
         padding: 40px;
+        &::after{
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 30vw;
+          height: 48vw;
+          display: block;
+          background: url(../images/bg_easy_s.png) bottom right no-repeat;
+          background-size: contain;
+        }
       }
       .box-w{
         width: 100%;
