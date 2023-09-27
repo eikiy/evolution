@@ -191,17 +191,18 @@ a:hover {
       font-weight: 500;
       display: inline-block;
 
-    span {
-      
-      &.text {
-        padding-left: 10px;
-      }
+      span {
+        
+        &.text {
+          text-align: right;
+        }
 
-      &.icon {
-        font-size: 13px;
-        padding:0 10px;
+        &.icon {
+          font-size: 13px;
+          padding:0 10px;
+          transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        }
       }
-    }
 
     a {
       min-width: 155px;
@@ -210,11 +211,25 @@ a:hover {
       padding: 8px 10px;
       color: #333;
       display: inline-block;
-
+      transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+      align-items: center;
+      align-content: center;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      span{
+        flex: auto;
+      }
       &:hover {
         border-color: #11948A;
         background-color: #11948A;
         color: #fff;
+        .icon {
+          padding: 0 0px 0 20px;
+        }
       }
     }
 
@@ -230,7 +245,7 @@ a:hover {
     padding: 15px 10px;
 
     p {
-      font-size: 14px;
+      font-size: 14px !important;
 
       span.icon {
         font-size: 12px;
@@ -621,8 +636,6 @@ a.go_top {
   .video-wrap{
     width: 100%;
     position: relative;
-    // padding-top: 40px;
-    // height: 100vh;
     &::after{
       position: absolute;
       content: "";
@@ -679,21 +692,14 @@ a.go_top {
     }
   }
   .bg-video-wrap {
-    // position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     overflow: hidden;
     width: 100%;
-    // height: 100vh;
-    // background: url(https://designsupply-web.com/samplecontent/vender/codepen/20181014.png) no-repeat center center/cover;
     video {
-      // position: absolute;
-      // top: 0;
-      // left: 0;
       width: 100%;
-      // height: 100%;
     }
     &__video {
       position: absolute;
@@ -703,25 +709,15 @@ a.go_top {
       height: 100%;
     }
   }
-  // .video-wrap{
-  //   width: 100%;
-  //   height: 100vh;
-  //   .the_videoBox {
-  //     position: absolute;
-  //     top: 0;
-  //     width: 100%;
-  //     overflow: hidden;
-  //     z-index: -100;
-  //     .vidbacking{
-  //       display: block;
-  //     }
-  //   }
-  // }
 
   .bg-datatech {
     background: url(../images/bg_datatech.png) center center repeat-y;
     background-attachment: fixed;
     padding: 40px 0 20px 0;
+    .block-box{
+      position: relative;
+      z-index: 5;
+    }
     @media (max-width: 760px) {
       background-image: url(../images/bg_datatech_s.png);
       padding: 20px 0 0 0;
@@ -732,7 +728,7 @@ a.go_top {
   }
 
   .bg-forecasting {
-    background: url(../images/bg_forecasting_0.png) center center no-repeat #d6ddd5;
+    background: url(../images/bg_forecasting_0.jpg) center center no-repeat #d6ddd5;
     background-attachment: fixed;
     position: relative;
     .block-box{
@@ -1296,6 +1292,10 @@ a.go_top {
           a {
             color: #fff;
             border-color: #fff;
+            &:hover{
+              border-color: #11948A;
+            }
+
           }
         }
       @media (max-width: 1200px){
@@ -1737,8 +1737,14 @@ a.go_top {
               display: block;
               background: url(../images/btn_navigation.svg) left bottom no-repeat;
               background-size: contain;
+              span{
+                transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+              }
               &:hover{
                 text-decoration: none;  
+                span{
+                  padding-left: 15px;
+                }
               }
             }
           }
@@ -2304,6 +2310,5 @@ a.go_top {
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
 }
-
 
 /*popup - style end*/

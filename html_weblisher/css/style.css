@@ -210,12 +210,14 @@ a:hover {
 }
 
 .btn p span.text {
-  padding-left: 10px;
+  text-align: right;
 }
 
 .btn p span.icon {
   font-size: 13px;
   padding: 0 10px;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 }
 
 .btn p a {
@@ -225,12 +227,36 @@ a:hover {
   padding: 8px 10px;
   color: #333;
   display: inline-block;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn p a span {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
 }
 
 .btn p a:hover {
   border-color: #11948A;
   background-color: #11948A;
   color: #fff;
+}
+
+.btn p a:hover .icon {
+  padding: 0 0px 0 20px;
 }
 
 .btn p.w_line a {
@@ -243,7 +269,7 @@ a:hover {
     padding: 15px 10px;
   }
   .btn p {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .btn p span.icon {
     font-size: 12px;
@@ -749,6 +775,11 @@ a.go_top {
   padding: 40px 0 20px 0;
 }
 
+.main-wrapper .bg-datatech .block-box {
+  position: relative;
+  z-index: 5;
+}
+
 @media (max-width: 760px) {
   .main-wrapper .bg-datatech {
     background-image: url(../images/bg_datatech_s.png);
@@ -760,7 +791,7 @@ a.go_top {
 }
 
 .main-wrapper .bg-forecasting {
-  background: url(../images/bg_forecasting_0.png) center center no-repeat #d6ddd5;
+  background: url(../images/bg_forecasting_0.jpg) center center no-repeat #d6ddd5;
   background-attachment: fixed;
   position: relative;
 }
@@ -1488,6 +1519,10 @@ a.go_top {
   border-color: #fff;
 }
 
+.main-wrapper .bg-support .style-row .btn a:hover {
+  border-color: #11948A;
+}
+
 @media (max-width: 1200px) {
   .main-wrapper .bg-support .style-row {
     height: initial;
@@ -2023,8 +2058,17 @@ a.go_top {
   background-size: contain;
 }
 
+.main-wrapper .company-map .company-info .text-info .btn-navigation p a span {
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
 .main-wrapper .company-map .company-info .text-info .btn-navigation p a:hover {
   text-decoration: none;
+}
+
+.main-wrapper .company-map .company-info .text-info .btn-navigation p a:hover span {
+  padding-left: 15px;
 }
 
 @media (max-width: 768px) {
